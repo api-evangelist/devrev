@@ -1,0 +1,32 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.devrev.ai/about/authentication
+docs: https://developer.devrev.ai/about/authentication
+summary:
+  types: [http]
+  scheme: bearer
+  token_kind: personal-access-token
+  api_key_in: [header]
+  oauth2_flows: []
+schemes:
+- name: PersonalAccessToken
+  type: http
+  scheme: bearer
+  in: header
+  header: Authorization
+  format: "Authorization: Bearer <PAT>"
+  description: >-
+    DevRev authenticates API requests with a Personal Access Token (PAT)
+    created from within the DevRev app (Settings > Account > Personal Access
+    Tokens). The PAT is sent as a Bearer token in the Authorization header;
+    the raw token value alone in Authorization is also accepted.
+token_management:
+  create: PATs are minted in the DevRev web app.
+  service_accounts: >-
+    Service-account tokens and auth-tokens/auth-connections endpoints exist for
+    snap-ins and machine-to-machine access (see the auth-tokens and
+    auth-connections API groups).
+notes: >-
+  No user-facing OAuth 2.0 authorization-code flow or scope catalog is documented
+  for the public REST API, so scopes/ is intentionally omitted (PAT-only auth).
+  Snap-ins use keyrings/auth-connections to hold third-party credentials.
