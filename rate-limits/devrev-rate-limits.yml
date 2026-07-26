@@ -1,0 +1,22 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.devrev.ai/about/rate-limits
+scope: >-
+  Rate limits apply in aggregate to all requests made by an authenticated user.
+window:
+  reset: 300
+  reset_unit: seconds
+  note: The rate-limit window resets every five minutes.
+status_code_on_limit: 429
+headers:
+- name: X-Ratelimit-Limit
+  description: The user's total rate limit units for the current window.
+- name: X-Ratelimit-Remaining
+  description: The user's remaining rate limit units for the current window.
+- name: X-Ratelimit-Reset
+  description: The time at which the rate limit window resets, in seconds from the Unix epoch.
+- name: Retry-After
+  description: Seconds until the rate limit window expires; sent on a 429 response.
+guidance: >-
+  On a 429, honor Retry-After (or X-Ratelimit-Reset) before retrying; back off
+  and avoid bursting since limits are aggregated per authenticated user.

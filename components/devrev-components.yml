@@ -1,0 +1,35 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/devrev + https://developer.devrev.ai/
+families:
+- name: PLuG (web support widget)
+  description: >-
+    Embeddable in-app support/conversation widget that surfaces DevRev support,
+    knowledge base, and PLuG conversations inside a web app via a JavaScript
+    loader snippet.
+  type: web-component / JS snippet
+  loaders:
+    examples:
+    - https://github.com/devrev/plug-vanilla-js-examples
+    - https://github.com/devrev/plug-react-js-examples
+    - https://github.com/devrev/plug-next-js-examples
+- name: PLuG mobile SDKs
+  description: >-
+    Native in-app support SDKs embedding the PLuG experience in mobile apps.
+  type: native SDK
+  platforms:
+  - {platform: iOS, repo: https://github.com/devrev/devrev-sdk-ios}
+  - {platform: Android, repo: https://github.com/devrev/devrev-sdk-android}
+  - {platform: React Native, repo: https://github.com/devrev/devrev-sdk-react-native, npm: "@devrev/sdk-react-native"}
+  - {platform: Flutter, repo: https://github.com/devrev/devrev-sdk-flutter}
+  - {platform: Cordova, repo: https://github.com/devrev/devrev-sdk-cordova, npm: "@devrev/sdk-cordova"}
+  - {platform: Expo, repo: https://github.com/devrev/devrev-sdk-expo}
+- name: Snap-kit / snap-widgets
+  description: >-
+    Server-driven UI kit (snap kits and snap widgets) for rendering interactive
+    DevRev surfaces and messages from snap-ins; exposed via the snap-kit
+    execution and snap-widgets API groups.
+  type: server-driven UI
+notes: >-
+  These are client-side/embeddable surfaces, distinct from the server SDKs in
+  packages/devrev-packages.yml.

@@ -1,0 +1,16 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.devrev.ai/changelog
+scheme: monthly
+docs:
+- https://developer.devrev.ai/changelog
+- https://devrev.ai/docs/changelog
+note: >-
+  DevRev publishes a monthly product changelog (devrev.ai/docs/changelog) and a
+  dedicated developer/API changelog (developer.devrev.ai/changelog). The API
+  changelog is generated from spec diffs (oasdiff) whenever the OpenAPI specs
+  are updated. The live pages are the source of truth; only the scheme and
+  recent-window pointers are captured here rather than a full history.
+recent_windows:
+- product changelog rolls up monthly (e.g. June 2025 entry set)
+- API changelog tracks per-spec-update additions and breaking changes

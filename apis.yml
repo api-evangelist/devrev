@@ -1,7 +1,18 @@
 aid: devrev
 name: Devrev
-description: Devrev is a company surfaced as a portfolio company of mayfield and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  DevRev is an AI-native platform that unifies customer support, product
+  development, and analytics on a single knowledge graph connecting end users
+  (Rev), builders (Dev), and their work. Its REST API is organized around
+  resource-oriented URLs, accepts and returns JSON, and uses standard HTTP verbs
+  and status codes. Endpoints cover works (issues and tickets), parts (the
+  product hierarchy), accounts, articles and the knowledge base, conversations
+  and timeline entries, tags, schedules, SLAs, surveys, webhooks, and snap-ins
+  (custom automations and apps that extend the platform). Authentication uses
+  Personal Access Tokens (PATs) passed as a Bearer token, and both a stable
+  Public API and an early-access Beta API are published. DevRev also ships
+  first-party SDKs, a Go-based CLI, the embeddable PLuG support widget, and
+  Airdrop (ADaaS) data-sync tooling.
 url: https://raw.githubusercontent.com/api-evangelist/devrev/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -9,17 +20,120 @@ x-backed-by:
 - mayfield
 x-tier: stub
 x-tier-reason: portfolio-lead
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
+image: https://cdn.sanity.io/images/umrbtih2/production/c7a33aa73687dea1ff37c39c2f8a4f0fc350e0d6-2880x1620.png
 tags:
 - Company
-apis: []
+- Customer Support
+- Product Development
+- Issue Tracking
+- Knowledge Base
+- CRM
+- Developer Tools
+- AI
+- Webhooks
+- Automation
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+apis:
+- name: DevRev REST API
+  description: >-
+    The DevRev public REST API for managing works (issues/tickets), parts,
+    accounts, articles, conversations, timeline entries, webhooks, and more.
+    Resource-oriented URLs, JSON request/response bodies, PAT bearer auth.
+  humanURL: https://developer.devrev.ai/
+  baseURL: https://api.devrev.ai
+  properties:
+  - type: Documentation
+    url: https://developer.devrev.ai/
+  - type: APIReference
+    url: https://developer.devrev.ai/public/about/for-developers
+  - type: GettingStarted
+    url: https://developer.devrev.ai/api-reference/getting-started
+  - type: Authentication
+    url: authentication/devrev-authentication.yml
+  - type: RateLimits
+    url: rate-limits/devrev-rate-limits.yml
+  - type: Webhooks
+    url: asyncapi/devrev-webhooks.yml
 common:
+- type: DomainSecurity
+  url: security/devrev-domain-security.yml
 - type: Website
   url: https://devrev.ai
+- type: DeveloperPortal
+  url: https://developer.devrev.ai/
+- type: Documentation
+  url: https://developer.devrev.ai/
+- type: APIReference
+  url: https://developer.devrev.ai/public/about/for-developers
+- type: GettingStarted
+  url: https://developer.devrev.ai/api-reference/getting-started
+- type: Blog
+  url: https://devrev.ai/blog
+- type: GitHubOrganization
+  url: https://github.com/devrev
+- type: Pricing
+  url: https://devrev.ai/pricing
+- type: SignUp
+  url: https://app.devrev.ai/
+- type: TermsOfService
+  url: https://devrev.ai/legal/terms-of-service
+- type: PrivacyPolicy
+  url: https://devrev.ai/legal/privacy-policy
+- type: StatusPage
+  url: https://status.devrev.ai/
+- type: ChangeLog
+  url: changelog/devrev-changelog.yml
+- type: LLMsTxt
+  url: llms/devrev-llms.txt
+- type: Authentication
+  url: authentication/devrev-authentication.yml
+- type: Packages
+  url: packages/devrev-packages.yml
+- type: SDKs
+  url: packages/devrev-packages.yml
+- type: CLI
+  url: cli/devrev-cli.yml
+- type: MCPServer
+  url: mcp/devrev-mcp.yml
+- type: Components
+  url: components/devrev-components.yml
+- type: Conventions
+  url: conventions/devrev-conventions.yml
+- type: RateLimits
+  url: rate-limits/devrev-rate-limits.yml
+- type: ErrorCatalog
+  url: errors/devrev-error-codes.yml
+- type: Lifecycle
+  url: lifecycle/devrev-lifecycle.yml
+- type: Conformance
+  url: conformance/devrev-conformance.yml
+- type: Compliance
+  url: https://security.devrev.ai/
+- type: TrustCenter
+  url: security/devrev-trust-center.yml
+- type: Webhooks
+  url: asyncapi/devrev-webhooks.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence

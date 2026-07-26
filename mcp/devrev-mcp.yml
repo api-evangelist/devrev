@@ -1,0 +1,30 @@
+generated: '2026-07-18'
+method: searched
+status: published
+source: https://developer.devrev.ai/airsync/mcp
+server:
+  name: devrev-airsync-mcp
+  transport: stdio
+  hosted: false
+  command: chef-cli
+  args: [mcp, initial-mapping]
+  auth: DevRev Personal Access Token (PAT), same as the REST API
+description: >-
+  DevRev ships an official local MCP server as part of the Airdrop/Airsync
+  `chef-cli` toolchain. It is run locally over stdio (not a remote hosted
+  endpoint) and is scoped to Airdrop metadata-mapping development: it lets an
+  MCP-aware client (e.g. Claude) test and edit the record-type/field mappings
+  used when syncing external systems into DevRev.
+tools:
+- name: test_mappings
+  description: Test record-type and field mappings against metadata files.
+- name: add_remove_record_type_mappings
+  description: Add and remove record type mappings.
+- name: map_unmap_fields
+  description: Map and unmap fields between external and DevRev metadata.
+- name: validate_mapping_file
+  description: Validate the structure of a mapping file.
+notes: >-
+  This is the only officially DevRev-published MCP server found. A separate
+  community `devrev/mcp-server` referenced by third-party MCP directories was
+  not publicly resolvable at review time (GitHub 404); it is not wired here.

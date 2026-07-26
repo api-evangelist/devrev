@@ -1,0 +1,38 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.devrev.ai/about/errors
+format: http-status
+envelope:
+  shape: '{ "message": "<supplemental information about the error>" }'
+  example: '{"message":"route not found"}'
+  note: >-
+    DevRev returns a JSON body with a message field plus a standard HTTP status
+    code. This is not RFC 9457 application/problem+json.
+errors:
+- status: 301
+  title: Moved Permanently
+  meaning: The target resource's ID has changed; the Location header contains the updated ID.
+- status: 400
+  title: Bad Request
+  meaning: The request was malformed or contained invalid arguments.
+- status: 401
+  title: Unauthorized
+  meaning: Authentication required and no credentials were provided or validation failed.
+- status: 403
+  title: Forbidden
+  meaning: The user isn't authorized to perform the requested action.
+- status: 404
+  title: Not Found
+  meaning: The requested endpoint or resource doesn't exist.
+- status: 409
+  title: Conflict
+  meaning: The attempted object creation conflicted with an existing object.
+- status: 429
+  title: Too Many Requests
+  meaning: The user is throttled due to exceeding their permitted rate limit. See rate-limits/devrev-rate-limits.yml.
+- status: 500
+  title: Internal Server Error
+  meaning: An internal error was encountered in the handling of the request.
+- status: 503
+  title: Service Unavailable
+  meaning: A transient error was encountered; retry after a short delay.

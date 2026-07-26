@@ -1,0 +1,34 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.devrev.ai/guides/webhooks
+spec_type: Webhooks
+description: >-
+  DevRev delivers object-mutation events to registered HTTP endpoints. Webhooks
+  are registered via the webhooks.create API endpoint with a target URL and the
+  event types to subscribe to. No published AsyncAPI document was found; this
+  captures the webhook catalog as documented.
+registration:
+  endpoint: POST https://api.devrev.ai/webhooks.create
+  api_group: webhooks
+  inputs: [url, event_types]
+delivery:
+  transport: HTTP POST to subscriber URL
+  signature_header: X-DevRev-Signature
+  signature_scheme: >-
+    HMAC-SHA256 using the endpoint secret (returned at registration) as the key
+    and the raw request payload as the message.
+  replay_protection: >-
+    A timestamp is provided and should be validated for proximity; stale
+    requests should be discarded.
+event_types:
+  documented_examples:
+  - work_created
+  - work_deleted
+  pattern: >-
+    Object-mutation events of the form <object>_<created|updated|deleted> across
+    supported objects (works, etc.). The docs describe the create/update/delete
+    pattern rather than a fixed exhaustive list.
+notes: >-
+  No AsyncAPI 2.x/3.x document is published, so only a Webhooks pointer is wired
+  (no AsyncAPI spec pointer). Event names beyond the documented examples were not
+  enumerated verbatim and are not fabricated here.

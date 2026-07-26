@@ -1,0 +1,1091 @@
+# DevRev Developer Documentation
+
+[DevRev Developer Docs](https://developer.devrev.ai/about/for-developers): Welcome to the DevRev Documentation. This documentation website serves as a knowledge base for our products and features, providing guides, tutorials, and other valuable resources.
+
+## About
+
+- [For Developers](https://developer.devrev.ai/about/for-developers): Welcome to the DevRev Documentation. This documentation website serves as a knowledge base for our products and features, providing guides, tutorials, and other valuable resources.
+- [Authentication](https://developer.devrev.ai/about/authentication): How to authenticate with the DevRev API using Personal Access Tokens (PATs) created from within the DevRev app.
+- [Pagination](https://developer.devrev.ai/about/pagination): How DevRev API responses handle pagination for large result sets.
+- [Versioning](https://developer.devrev.ai/about/versioning): Details on the two available API versions — Public and Beta (early access) — and how to switch between them.
+- [Rate Limits](https://developer.devrev.ai/about/rate-limits): Rate limiting policies for the DevRev API and how to handle limit errors gracefully.
+- [Errors](https://developer.devrev.ai/about/errors): Reference for DevRev API error codes and how to interpret and handle them in your integrations.
+
+## API Reference
+
+- [Getting Started](https://developer.devrev.ai/api-reference/getting-started): A brief tutorial on how to make your first API call using a Personal Access Token to access DevRev's REST APIs.
+
+### Accounts
+- [Accounts](https://developer.devrev.ai/api-reference/accounts): API endpoints for managing accounts in DevRev.
+- [POST accounts.create](https://developer.devrev.ai/api-reference/accounts/create)
+- [POST accounts.delete](https://developer.devrev.ai/api-reference/accounts/delete)
+- [GET accounts.export](https://developer.devrev.ai/api-reference/accounts/export)
+- [POST accounts.export](https://developer.devrev.ai/api-reference/accounts/export-post)
+- [GET accounts.get](https://developer.devrev.ai/api-reference/accounts/get)
+- [POST accounts.get](https://developer.devrev.ai/api-reference/accounts/get-post)
+- [GET accounts.list](https://developer.devrev.ai/api-reference/accounts/list)
+- [POST accounts.list](https://developer.devrev.ai/api-reference/accounts/list-post)
+- [POST accounts.merge](https://developer.devrev.ai/api-reference/accounts/merge)
+- [POST accounts.update](https://developer.devrev.ai/api-reference/accounts/update)
+
+### Articles
+- [POST articles.create](https://developer.devrev.ai/api-reference/articles/create)
+- [POST articles.delete](https://developer.devrev.ai/api-reference/articles/delete)
+- [GET articles.get](https://developer.devrev.ai/api-reference/articles/get)
+- [POST articles.get](https://developer.devrev.ai/api-reference/articles/get-post)
+- [GET articles.list](https://developer.devrev.ai/api-reference/articles/list)
+- [POST articles.list](https://developer.devrev.ai/api-reference/articles/list-post)
+- [POST articles.update](https://developer.devrev.ai/api-reference/articles/update)
+
+### Artifacts
+- [Attachments](https://developer.devrev.ai/api-reference/artifacts/attachments): Information about file attachments.
+- [GET artifacts.get](https://developer.devrev.ai/api-reference/artifacts/get)
+- [POST artifacts.get](https://developer.devrev.ai/api-reference/artifacts/get-post)
+- [GET artifacts.list](https://developer.devrev.ai/api-reference/artifacts/list)
+- [POST artifacts.list](https://developer.devrev.ai/api-reference/artifacts/list-post)
+- [GET artifacts.locate](https://developer.devrev.ai/api-reference/artifacts/locate)
+- [POST artifacts.locate](https://developer.devrev.ai/api-reference/artifacts/locate-post)
+- [POST artifacts.prepare](https://developer.devrev.ai/api-reference/artifacts/prepare)
+- [POST artifacts.versions.delete](https://developer.devrev.ai/api-reference/artifacts/versions/delete)
+- [POST artifacts.versions.prepare](https://developer.devrev.ai/api-reference/artifacts/versions/prepare)
+
+### Atoms
+- [GET atoms.get](https://developer.devrev.ai/api-reference/atoms/get)
+- [POST atoms.get](https://developer.devrev.ai/api-reference/atoms/get-post)
+
+### Auth Tokens
+- [Security Tokens](https://developer.devrev.ai/api-reference/auth-tokens/security-tokens): Information about security tokens.
+- [POST auth-tokens.create](https://developer.devrev.ai/api-reference/auth-tokens/create)
+- [POST auth-tokens.delete](https://developer.devrev.ai/api-reference/auth-tokens/delete)
+- [GET auth-tokens.get](https://developer.devrev.ai/api-reference/auth-tokens/get)
+- [POST auth-tokens.get](https://developer.devrev.ai/api-reference/auth-tokens/get-post)
+- [GET auth-tokens.info](https://developer.devrev.ai/api-reference/auth-tokens/info)
+- [POST auth-tokens.info](https://developer.devrev.ai/api-reference/auth-tokens/info-post)
+- [GET auth-tokens.list](https://developer.devrev.ai/api-reference/auth-tokens/list)
+- [POST auth-tokens.list](https://developer.devrev.ai/api-reference/auth-tokens/list-post)
+- [POST auth-tokens.self.delete](https://developer.devrev.ai/api-reference/auth-tokens/self/delete)
+- [POST auth-tokens.update](https://developer.devrev.ai/api-reference/auth-tokens/update)
+
+### Chats
+- [POST chats.create](https://developer.devrev.ai/api-reference/chats/create)
+- [GET chats.get](https://developer.devrev.ai/api-reference/chats/get)
+- [POST chats.get](https://developer.devrev.ai/api-reference/chats/get-post)
+- [POST chats.update](https://developer.devrev.ai/api-reference/chats/update)
+
+### Code Changes
+- [POST code-changes.create](https://developer.devrev.ai/api-reference/code-changes/create)
+- [POST code-changes.delete](https://developer.devrev.ai/api-reference/code-changes/delete)
+- [GET code-changes.get](https://developer.devrev.ai/api-reference/code-changes/get)
+- [POST code-changes.get](https://developer.devrev.ai/api-reference/code-changes/get-post)
+- [GET code-changes.list](https://developer.devrev.ai/api-reference/code-changes/list)
+- [POST code-changes.list](https://developer.devrev.ai/api-reference/code-changes/list-post)
+- [POST code-changes.update](https://developer.devrev.ai/api-reference/code-changes/update)
+
+### Commands
+- [POST commands.create](https://developer.devrev.ai/api-reference/commands/create)
+- [GET commands.get](https://developer.devrev.ai/api-reference/commands/get)
+- [POST commands.get](https://developer.devrev.ai/api-reference/commands/get-post)
+- [GET commands.list](https://developer.devrev.ai/api-reference/commands/list)
+- [POST commands.list](https://developer.devrev.ai/api-reference/commands/list-post)
+- [POST commands.update](https://developer.devrev.ai/api-reference/commands/update)
+
+### Conversations
+- [POST conversations.create](https://developer.devrev.ai/api-reference/conversations/create)
+- [POST conversations.delete](https://developer.devrev.ai/api-reference/conversations/delete)
+- [GET conversations.get](https://developer.devrev.ai/api-reference/conversations/get)
+- [POST conversations.get](https://developer.devrev.ai/api-reference/conversations/get-post)
+- [GET conversations.list](https://developer.devrev.ai/api-reference/conversations/list)
+- [POST conversations.list](https://developer.devrev.ai/api-reference/conversations/list-post)
+- [POST conversations.update](https://developer.devrev.ai/api-reference/conversations/update)
+
+### Custom Objects
+- [GET custom-objects.count](https://developer.devrev.ai/api-reference/custom-objects/count)
+- [POST custom-objects.count](https://developer.devrev.ai/api-reference/custom-objects/count-post)
+- [POST custom-objects.create](https://developer.devrev.ai/api-reference/custom-objects/create)
+- [POST custom-objects.delete](https://developer.devrev.ai/api-reference/custom-objects/delete)
+- [GET custom-objects.get](https://developer.devrev.ai/api-reference/custom-objects/get)
+- [POST custom-objects.get](https://developer.devrev.ai/api-reference/custom-objects/get-post)
+- [GET custom-objects.list](https://developer.devrev.ai/api-reference/custom-objects/list)
+- [POST custom-objects.list](https://developer.devrev.ai/api-reference/custom-objects/list-post)
+- [POST custom-objects.update](https://developer.devrev.ai/api-reference/custom-objects/update)
+
+### Dev Orgs
+- [POST dev-orgs.auth-connections.create](https://developer.devrev.ai/api-reference/dev-orgs/auth-connections/create)
+- [POST dev-orgs.auth-connections.delete](https://developer.devrev.ai/api-reference/dev-orgs/auth-connections/delete)
+- [GET dev-orgs.auth-connections.get](https://developer.devrev.ai/api-reference/dev-orgs/auth-connections/get)
+- [POST dev-orgs.auth-connections.get](https://developer.devrev.ai/api-reference/dev-orgs/auth-connections/get-post)
+- [GET dev-orgs.auth-connections.list](https://developer.devrev.ai/api-reference/dev-orgs/auth-connections/list)
+- [POST dev-orgs.auth-connections.list](https://developer.devrev.ai/api-reference/dev-orgs/auth-connections/list-post)
+- [POST dev-orgs.auth-connections.toggle](https://developer.devrev.ai/api-reference/dev-orgs/auth-connections/toggle)
+- [POST dev-orgs.auth-connections.update](https://developer.devrev.ai/api-reference/dev-orgs/auth-connections/update)
+- [GET dev-orgs.get](https://developer.devrev.ai/api-reference/dev-orgs/get)
+- [POST dev-orgs.get](https://developer.devrev.ai/api-reference/dev-orgs/get-post)
+
+### Dev Users
+- [Product Builders and Service Providers](https://developer.devrev.ai/api-reference/dev-users/product-builders-and-service-providers): Information about dev users.
+- [POST dev-users.activate](https://developer.devrev.ai/api-reference/dev-users/activate)
+- [POST dev-users.create](https://developer.devrev.ai/api-reference/dev-users/create)
+- [POST dev-users.deactivate](https://developer.devrev.ai/api-reference/dev-users/deactivate)
+- [GET dev-users.get](https://developer.devrev.ai/api-reference/dev-users/get)
+- [POST dev-users.get](https://developer.devrev.ai/api-reference/dev-users/get-post)
+- [POST dev-users.identities.link](https://developer.devrev.ai/api-reference/dev-users/identities/link)
+- [POST dev-users.identities.unlink](https://developer.devrev.ai/api-reference/dev-users/identities/unlink)
+- [GET dev-users.list](https://developer.devrev.ai/api-reference/dev-users/list)
+- [POST dev-users.list](https://developer.devrev.ai/api-reference/dev-users/list-post)
+- [POST dev-users.merge](https://developer.devrev.ai/api-reference/dev-users/merge)
+- [GET dev-users.self](https://developer.devrev.ai/api-reference/dev-users/self)
+- [POST dev-users.self](https://developer.devrev.ai/api-reference/dev-users/self-post)
+- [POST dev-users.self.update](https://developer.devrev.ai/api-reference/dev-users/self/update)
+- [POST dev-users.update](https://developer.devrev.ai/api-reference/dev-users/update)
+
+### Directories
+- [GET directories.count](https://developer.devrev.ai/api-reference/directories/count)
+- [POST directories.count](https://developer.devrev.ai/api-reference/directories/count-post)
+- [POST directories.create](https://developer.devrev.ai/api-reference/directories/create)
+- [POST directories.delete](https://developer.devrev.ai/api-reference/directories/delete)
+- [GET directories.get](https://developer.devrev.ai/api-reference/directories/get)
+- [POST directories.get](https://developer.devrev.ai/api-reference/directories/get-post)
+- [GET directories.list](https://developer.devrev.ai/api-reference/directories/list)
+- [POST directories.list](https://developer.devrev.ai/api-reference/directories/list-post)
+- [POST directories.update](https://developer.devrev.ai/api-reference/directories/update)
+
+### Groups
+- [POST groups.create](https://developer.devrev.ai/api-reference/groups/create)
+- [GET groups.get](https://developer.devrev.ai/api-reference/groups/get)
+- [POST groups.get](https://developer.devrev.ai/api-reference/groups/get-post)
+- [GET groups.list](https://developer.devrev.ai/api-reference/groups/list)
+- [POST groups.list](https://developer.devrev.ai/api-reference/groups/list-post)
+- [POST groups.members.add](https://developer.devrev.ai/api-reference/groups/members/add)
+- [GET groups.members.list](https://developer.devrev.ai/api-reference/groups/members/list)
+- [POST groups.members.list](https://developer.devrev.ai/api-reference/groups/members/list-post)
+- [POST groups.members.remove](https://developer.devrev.ai/api-reference/groups/members/remove)
+- [POST groups.update](https://developer.devrev.ai/api-reference/groups/update)
+
+### Keyrings
+- [GET keyrings.authorize](https://developer.devrev.ai/api-reference/keyrings/authorize)
+- [POST keyrings.authorize](https://developer.devrev.ai/api-reference/keyrings/authorize-post)
+
+### Links
+- [POST links.create](https://developer.devrev.ai/api-reference/links/create)
+- [POST links.delete](https://developer.devrev.ai/api-reference/links/delete)
+- [GET links.get](https://developer.devrev.ai/api-reference/links/get)
+- [POST links.get](https://developer.devrev.ai/api-reference/links/get-post)
+- [GET links.list](https://developer.devrev.ai/api-reference/links/list)
+- [POST links.list](https://developer.devrev.ai/api-reference/links/list-post)
+- [POST links.replace](https://developer.devrev.ai/api-reference/links/replace)
+
+### Meetings
+- [GET meetings.count](https://developer.devrev.ai/api-reference/meetings/count)
+- [POST meetings.count](https://developer.devrev.ai/api-reference/meetings/count-post)
+- [POST meetings.create](https://developer.devrev.ai/api-reference/meetings/create)
+- [POST meetings.delete](https://developer.devrev.ai/api-reference/meetings/delete)
+- [GET meetings.get](https://developer.devrev.ai/api-reference/meetings/get)
+- [POST meetings.get](https://developer.devrev.ai/api-reference/meetings/get-post)
+- [GET meetings.list](https://developer.devrev.ai/api-reference/meetings/list)
+- [POST meetings.list](https://developer.devrev.ai/api-reference/meetings/list-post)
+- [POST meetings.update](https://developer.devrev.ai/api-reference/meetings/update)
+
+### Metric Action
+- [POST metric-action.execute](https://developer.devrev.ai/api-reference/metric-action/execute)
+
+### Metric Definitions
+- [POST metric-definitions.create](https://developer.devrev.ai/api-reference/metric-definitions/create)
+- [POST metric-definitions.delete](https://developer.devrev.ai/api-reference/metric-definitions/delete)
+- [GET metric-definitions.get](https://developer.devrev.ai/api-reference/metric-definitions/get)
+- [POST metric-definitions.get](https://developer.devrev.ai/api-reference/metric-definitions/get-post)
+- [GET metric-definitions.list](https://developer.devrev.ai/api-reference/metric-definitions/list)
+- [POST metric-definitions.list](https://developer.devrev.ai/api-reference/metric-definitions/list-post)
+- [POST metric-definitions.update](https://developer.devrev.ai/api-reference/metric-definitions/update)
+
+### Metric Trackers
+- [GET metric-trackers.get](https://developer.devrev.ai/api-reference/metric-trackers/get)
+- [POST metric-trackers.get](https://developer.devrev.ai/api-reference/metric-trackers/get-post)
+
+### Org Schedule Fragments
+- [POST org-schedule-fragments.create](https://developer.devrev.ai/api-reference/org-schedule-fragments/create)
+- [GET org-schedule-fragments.get](https://developer.devrev.ai/api-reference/org-schedule-fragments/get)
+- [POST org-schedule-fragments.get](https://developer.devrev.ai/api-reference/org-schedule-fragments/get-post)
+- [POST org-schedule-fragments.transition](https://developer.devrev.ai/api-reference/org-schedule-fragments/transition)
+
+### Org Schedules
+- [POST org-schedules.create](https://developer.devrev.ai/api-reference/org-schedules/create)
+- [GET org-schedules.evaluate](https://developer.devrev.ai/api-reference/org-schedules/evaluate)
+- [POST org-schedules.evaluate](https://developer.devrev.ai/api-reference/org-schedules/evaluate-post)
+- [GET org-schedules.get](https://developer.devrev.ai/api-reference/org-schedules/get)
+- [POST org-schedules.get](https://developer.devrev.ai/api-reference/org-schedules/get-post)
+- [GET org-schedules.list](https://developer.devrev.ai/api-reference/org-schedules/list)
+- [POST org-schedules.list](https://developer.devrev.ai/api-reference/org-schedules/list-post)
+- [POST org-schedules.set-future](https://developer.devrev.ai/api-reference/org-schedules/set-future)
+- [POST org-schedules.transition](https://developer.devrev.ai/api-reference/org-schedules/transition)
+- [POST org-schedules.update](https://developer.devrev.ai/api-reference/org-schedules/update)
+
+### Parts
+- [Product Components](https://developer.devrev.ai/api-reference/parts/product-components): Information about product components.
+- [POST parts.create](https://developer.devrev.ai/api-reference/parts/create)
+- [POST parts.delete](https://developer.devrev.ai/api-reference/parts/delete)
+- [GET parts.get](https://developer.devrev.ai/api-reference/parts/get)
+- [POST parts.get](https://developer.devrev.ai/api-reference/parts/get-post)
+- [GET parts.list](https://developer.devrev.ai/api-reference/parts/list)
+- [POST parts.list](https://developer.devrev.ai/api-reference/parts/list-post)
+- [POST parts.update](https://developer.devrev.ai/api-reference/parts/update)
+
+### Reactions
+- [GET reactions.list](https://developer.devrev.ai/api-reference/reactions/list)
+- [POST reactions.list](https://developer.devrev.ai/api-reference/reactions/list-post)
+- [POST reactions.update](https://developer.devrev.ai/api-reference/reactions/update)
+
+### Rev Orgs
+- [Workspaces](https://developer.devrev.ai/api-reference/rev-orgs/workspaces): Information about workspaces.
+- [POST rev-orgs.create](https://developer.devrev.ai/api-reference/rev-orgs/create)
+- [POST rev-orgs.delete](https://developer.devrev.ai/api-reference/rev-orgs/delete)
+- [GET rev-orgs.get](https://developer.devrev.ai/api-reference/rev-orgs/get)
+- [POST rev-orgs.get](https://developer.devrev.ai/api-reference/rev-orgs/get-post)
+- [GET rev-orgs.list](https://developer.devrev.ai/api-reference/rev-orgs/list)
+- [POST rev-orgs.list](https://developer.devrev.ai/api-reference/rev-orgs/list-post)
+- [POST rev-orgs.update](https://developer.devrev.ai/api-reference/rev-orgs/update)
+
+### Rev Users
+- [POST rev-users.create](https://developer.devrev.ai/api-reference/rev-users/create)
+- [POST rev-users.delete](https://developer.devrev.ai/api-reference/rev-users/delete)
+- [GET rev-users.get](https://developer.devrev.ai/api-reference/rev-users/get)
+- [POST rev-users.get](https://developer.devrev.ai/api-reference/rev-users/get-post)
+- [GET rev-users.list](https://developer.devrev.ai/api-reference/rev-users/list)
+- [POST rev-users.list](https://developer.devrev.ai/api-reference/rev-users/list-post)
+- [POST rev-users.merge](https://developer.devrev.ai/api-reference/rev-users/merge)
+- [GET rev-users.scan](https://developer.devrev.ai/api-reference/rev-users/scan)
+- [POST rev-users.scan](https://developer.devrev.ai/api-reference/rev-users/scan-post)
+- [POST rev-users.update](https://developer.devrev.ai/api-reference/rev-users/update)
+
+### Schemas
+- [GET schemas.aggregated.get](https://developer.devrev.ai/api-reference/schemas/aggregated/get)
+- [POST schemas.aggregated.get](https://developer.devrev.ai/api-reference/schemas/aggregated/get-post)
+- [GET schemas.custom.get](https://developer.devrev.ai/api-reference/schemas/custom/get)
+- [POST schemas.custom.get](https://developer.devrev.ai/api-reference/schemas/custom/get-post)
+- [GET schemas.custom.list](https://developer.devrev.ai/api-reference/schemas/custom/list)
+- [POST schemas.custom.list](https://developer.devrev.ai/api-reference/schemas/custom/list-post)
+- [POST schemas.custom.set](https://developer.devrev.ai/api-reference/schemas/custom/set)
+- [GET schemas.stock.get](https://developer.devrev.ai/api-reference/schemas/stock/get)
+- [POST schemas.stock.get](https://developer.devrev.ai/api-reference/schemas/stock/get-post)
+- [GET schemas.stock.list](https://developer.devrev.ai/api-reference/schemas/stock/list)
+- [POST schemas.stock.list](https://developer.devrev.ai/api-reference/schemas/stock/list-post)
+- [POST schemas.subtypes.prepare-update](https://developer.devrev.ai/api-reference/schemas/subtypes/prepare-update)
+
+### Service Accounts
+- [POST service-accounts.create](https://developer.devrev.ai/api-reference/service-accounts/create)
+- [GET service-accounts.get](https://developer.devrev.ai/api-reference/service-accounts/get)
+- [POST service-accounts.get](https://developer.devrev.ai/api-reference/service-accounts/get-post)
+
+### Sla Trackers
+- [GET sla-trackers.get](https://developer.devrev.ai/api-reference/sla-trackers/get)
+- [POST sla-trackers.get](https://developer.devrev.ai/api-reference/sla-trackers/get-post)
+- [GET sla-trackers.list](https://developer.devrev.ai/api-reference/sla-trackers/list)
+- [POST sla-trackers.list](https://developer.devrev.ai/api-reference/sla-trackers/list-post)
+
+### Slas
+- [Service Level Agreement](https://developer.devrev.ai/api-reference/slas/service-level-agreement): Information about SLAs.
+- [POST slas.assign](https://developer.devrev.ai/api-reference/slas/assign)
+- [POST slas.create](https://developer.devrev.ai/api-reference/slas/create)
+- [GET slas.get](https://developer.devrev.ai/api-reference/slas/get)
+- [POST slas.get](https://developer.devrev.ai/api-reference/slas/get-post)
+- [GET slas.list](https://developer.devrev.ai/api-reference/slas/list)
+- [POST slas.list](https://developer.devrev.ai/api-reference/slas/list-post)
+- [POST slas.transition](https://developer.devrev.ai/api-reference/slas/transition)
+- [POST slas.update](https://developer.devrev.ai/api-reference/slas/update)
+
+### Snap Kit Action
+- [POST snap-kit-action.execute.deferred](https://developer.devrev.ai/api-reference/snap-kit-action/execute/deferred)
+
+### Snap Widgets
+- [POST snap-widgets.create](https://developer.devrev.ai/api-reference/snap-widgets/create)
+
+### Stage Diagrams
+- [POST stage-diagrams.create](https://developer.devrev.ai/api-reference/stage-diagrams/create)
+- [GET stage-diagrams.get](https://developer.devrev.ai/api-reference/stage-diagrams/get)
+- [POST stage-diagrams.get](https://developer.devrev.ai/api-reference/stage-diagrams/get-post)
+- [GET stage-diagrams.list](https://developer.devrev.ai/api-reference/stage-diagrams/list)
+- [POST stage-diagrams.list](https://developer.devrev.ai/api-reference/stage-diagrams/list-post)
+- [POST stage-diagrams.update](https://developer.devrev.ai/api-reference/stage-diagrams/update)
+
+### Stages
+- [POST stages.custom.create](https://developer.devrev.ai/api-reference/stages/custom/create)
+- [GET stages.custom.get](https://developer.devrev.ai/api-reference/stages/custom/get)
+- [POST stages.custom.get](https://developer.devrev.ai/api-reference/stages/custom/get-post)
+- [GET stages.custom.list](https://developer.devrev.ai/api-reference/stages/custom/list)
+- [POST stages.custom.list](https://developer.devrev.ai/api-reference/stages/custom/list-post)
+- [POST stages.custom.update](https://developer.devrev.ai/api-reference/stages/custom/update)
+
+### States
+- [POST states.custom.create](https://developer.devrev.ai/api-reference/states/custom/create)
+- [GET states.custom.get](https://developer.devrev.ai/api-reference/states/custom/get)
+- [POST states.custom.get](https://developer.devrev.ai/api-reference/states/custom/get-post)
+- [GET states.custom.list](https://developer.devrev.ai/api-reference/states/custom/list)
+- [POST states.custom.list](https://developer.devrev.ai/api-reference/states/custom/list-post)
+- [POST states.custom.update](https://developer.devrev.ai/api-reference/states/custom/update)
+
+### Surveys
+- [POST surveys.create](https://developer.devrev.ai/api-reference/surveys/create)
+- [POST surveys.delete](https://developer.devrev.ai/api-reference/surveys/delete)
+- [GET surveys.get](https://developer.devrev.ai/api-reference/surveys/get)
+- [POST surveys.get](https://developer.devrev.ai/api-reference/surveys/get-post)
+- [GET surveys.list](https://developer.devrev.ai/api-reference/surveys/list)
+- [POST surveys.list](https://developer.devrev.ai/api-reference/surveys/list-post)
+- [GET surveys.responses.list](https://developer.devrev.ai/api-reference/surveys/responses/list)
+- [POST surveys.responses.list](https://developer.devrev.ai/api-reference/surveys/responses/list-post)
+- [POST surveys.responses.update](https://developer.devrev.ai/api-reference/surveys/responses/update)
+- [POST surveys.send](https://developer.devrev.ai/api-reference/surveys/send)
+- [POST surveys.submit](https://developer.devrev.ai/api-reference/surveys/submit)
+- [POST surveys.update](https://developer.devrev.ai/api-reference/surveys/update)
+
+### Sys Users
+- [GET sys-users.list](https://developer.devrev.ai/api-reference/sys-users/list)
+- [POST sys-users.list](https://developer.devrev.ai/api-reference/sys-users/list-post)
+- [POST sys-users.update](https://developer.devrev.ai/api-reference/sys-users/update)
+
+### Tags
+- [Concepts](https://developer.devrev.ai/api-reference/tags/concepts): Information about tag concepts.
+- [POST tags.create](https://developer.devrev.ai/api-reference/tags/create)
+- [POST tags.delete](https://developer.devrev.ai/api-reference/tags/delete)
+- [GET tags.get](https://developer.devrev.ai/api-reference/tags/get)
+- [POST tags.get](https://developer.devrev.ai/api-reference/tags/get-post)
+- [GET tags.list](https://developer.devrev.ai/api-reference/tags/list)
+- [POST tags.list](https://developer.devrev.ai/api-reference/tags/list-post)
+- [POST tags.update](https://developer.devrev.ai/api-reference/tags/update)
+
+### Timeline Entries
+- [Discussions and Events](https://developer.devrev.ai/api-reference/timeline-entries/discussions-and-events): Information about timeline discussions and events.
+- [POST timeline-entries.create](https://developer.devrev.ai/api-reference/timeline-entries/create)
+- [POST timeline-entries.delete](https://developer.devrev.ai/api-reference/timeline-entries/delete)
+- [GET timeline-entries.get](https://developer.devrev.ai/api-reference/timeline-entries/get)
+- [POST timeline-entries.get](https://developer.devrev.ai/api-reference/timeline-entries/get-post)
+- [GET timeline-entries.list](https://developer.devrev.ai/api-reference/timeline-entries/list)
+- [POST timeline-entries.list](https://developer.devrev.ai/api-reference/timeline-entries/list-post)
+- [POST timeline-entries.update](https://developer.devrev.ai/api-reference/timeline-entries/update)
+
+### Vistas
+- [POST vistas.delete](https://developer.devrev.ai/api-reference/vistas/delete)
+- [GET vistas.get](https://developer.devrev.ai/api-reference/vistas/get)
+- [POST vistas.get](https://developer.devrev.ai/api-reference/vistas/get-post)
+- [POST vistas.groups.delete](https://developer.devrev.ai/api-reference/vistas/groups/delete)
+- [GET vistas.groups.get](https://developer.devrev.ai/api-reference/vistas/groups/get)
+- [POST vistas.groups.get](https://developer.devrev.ai/api-reference/vistas/groups/get-post)
+- [GET vistas.groups.list](https://developer.devrev.ai/api-reference/vistas/groups/list)
+- [POST vistas.groups.list](https://developer.devrev.ai/api-reference/vistas/groups/list-post)
+- [GET vistas.list](https://developer.devrev.ai/api-reference/vistas/list)
+- [POST vistas.list](https://developer.devrev.ai/api-reference/vistas/list-post)
+
+### Web Crawler Jobs
+- [POST web-crawler-jobs.control](https://developer.devrev.ai/api-reference/web-crawler-jobs/control)
+- [POST web-crawler-jobs.create](https://developer.devrev.ai/api-reference/web-crawler-jobs/create)
+- [GET web-crawler-jobs.get](https://developer.devrev.ai/api-reference/web-crawler-jobs/get)
+- [POST web-crawler-jobs.get](https://developer.devrev.ai/api-reference/web-crawler-jobs/get-post)
+- [GET web-crawler-jobs.list](https://developer.devrev.ai/api-reference/web-crawler-jobs/list)
+- [POST web-crawler-jobs.list](https://developer.devrev.ai/api-reference/web-crawler-jobs/list-post)
+
+### Webhooks
+- [Event Responses](https://developer.devrev.ai/api-reference/webhooks/event-responses): Information about webhook event responses.
+- [POST webhooks.create](https://developer.devrev.ai/api-reference/webhooks/create)
+- [POST webhooks.delete](https://developer.devrev.ai/api-reference/webhooks/delete)
+- [POST webhooks.event](https://developer.devrev.ai/api-reference/webhooks/event)
+- [GET webhooks.get](https://developer.devrev.ai/api-reference/webhooks/get)
+- [POST webhooks.get](https://developer.devrev.ai/api-reference/webhooks/get-post)
+- [GET webhooks.list](https://developer.devrev.ai/api-reference/webhooks/list)
+- [POST webhooks.list](https://developer.devrev.ai/api-reference/webhooks/list-post)
+- [POST webhooks.update](https://developer.devrev.ai/api-reference/webhooks/update)
+
+### Works
+- [Tickets and Issues](https://developer.devrev.ai/api-reference/works/tickets-and-issues): Information about tickets and issues.
+- [POST works.create](https://developer.devrev.ai/api-reference/works/create)
+- [POST works.delete](https://developer.devrev.ai/api-reference/works/delete)
+- [GET works.export](https://developer.devrev.ai/api-reference/works/export)
+- [POST works.export](https://developer.devrev.ai/api-reference/works/export-post)
+- [GET works.get](https://developer.devrev.ai/api-reference/works/get)
+- [POST works.get](https://developer.devrev.ai/api-reference/works/get-post)
+- [GET works.list](https://developer.devrev.ai/api-reference/works/list)
+- [POST works.list](https://developer.devrev.ai/api-reference/works/list-post)
+- [POST works.update](https://developer.devrev.ai/api-reference/works/update)
+
+### Changelog
+- [Changelog](https://developer.devrev.ai/changelog): A log of updates, additions, and breaking changes to the DevRev API.
+
+## Guides
+
+- [Webhooks](https://developer.devrev.ai/guides/webhooks): How to register and use webhooks to receive real-time event notifications from the DevRev platform and trigger automations.
+- [Restricted Messages on a Timeline](https://developer.devrev.ai/guides/timeline-entries): How to post and manage restricted timeline entries that are only visible to internal team members.
+- [Object Customization](https://developer.devrev.ai/guides/object-customization): How to add custom fields and schemas to existing DevRev object types to fit your team's data model.
+- [Custom Objects](https://developer.devrev.ai/guides/custom-objects): How to define entirely new object types in DevRev for data that doesn't fit into built-in types.
+
+## SDKs
+
+- [SDK Overview](https://developer.devrev.ai/sdks): Overview of all official DevRev SDKs across web and mobile platforms.
+
+### PLuG Web SDK
+
+- [Install the Web SDK](https://developer.devrev.ai/sdks/web/installation): How to install and configure the PLuG Web SDK to embed DevRev's customer support widget into your web application.
+- [Install Plug Search](https://developer.devrev.ai/sdks/web/install-search): How to install and configure PLuG search functionality.
+- [Identify Your Users with Plug](https://developer.devrev.ai/sdks/web/user-identity): How to identify and track users in the PLuG Web SDK.
+- [Track Events](https://developer.devrev.ai/sdks/web/track-events): How to track custom events with the PLuG Web SDK.
+- [Methods](https://developer.devrev.ai/sdks/web/methods): Reference for all available methods in the PLuG Web SDK.
+- [Custom Implementation](https://developer.devrev.ai/sdks/web/customize): How to customize the PLuG Web SDK implementation.
+- [UserExperior Migration](https://developer.devrev.ai/sdks/web/migration): Guide for migrating from UserExperior to DevRev PLuG.
+
+### DevRev SDK for Android
+
+- [Quickstart Guide](https://developer.devrev.ai/sdks/android/quickstart): Quickstart guide for integrating DevRev's support and PLuG functionality into Android apps.
+- [Features](https://developer.devrev.ai/sdks/android/features): Overview of features available in the DevRev Android SDK.
+- [Migration Guide](https://developer.devrev.ai/sdks/android/migration-guide): Guide for migrating to the latest version of the Android SDK.
+- [Troubleshooting](https://developer.devrev.ai/sdks/android/troubleshooting): Common issues and solutions for the Android SDK.
+
+### DevRev SDK for iOS
+
+- [Quickstart Guide](https://developer.devrev.ai/sdks/ios/quickstart): Quickstart guide for integrating DevRev's support and PLuG functionality into iOS apps.
+- [Features](https://developer.devrev.ai/sdks/ios/features): Overview of features available in the DevRev iOS SDK.
+- [Migration Guide](https://developer.devrev.ai/sdks/ios/migration-guide): Guide for migrating to the latest version of the iOS SDK.
+- [Troubleshooting](https://developer.devrev.ai/sdks/ios/troubleshooting): Common issues and solutions for the iOS SDK.
+
+### DevRev SDK for React Native and Expo
+
+- [Quickstart Guide (React Native)](https://developer.devrev.ai/sdks/react-native/quickstart): Quickstart guide for adding DevRev support to React Native applications.
+- [Quickstart Guide (Expo)](https://developer.devrev.ai/sdks/react-native/quickstart-expo): Quickstart guide for adding DevRev support to Expo applications.
+- [Features](https://developer.devrev.ai/sdks/react-native/features): Overview of features available in the DevRev React Native SDK.
+- [Migration Guide](https://developer.devrev.ai/sdks/react-native/migration-guide): Guide for migrating to the latest version of the React Native SDK.
+- [Troubleshooting](https://developer.devrev.ai/sdks/react-native/troubleshooting): Common issues and solutions for the React Native SDK.
+
+### DevRev SDK for Cordova
+
+- [Quickstart Guide](https://developer.devrev.ai/sdks/cordova/quickstart): Quickstart guide for integrating DevRev into Cordova-based hybrid mobile apps.
+- [Features](https://developer.devrev.ai/sdks/cordova/features): Overview of features available in the DevRev Cordova SDK.
+- [Migration Guide](https://developer.devrev.ai/sdks/cordova/migration-guide): Guide for migrating to the latest version of the Cordova SDK.
+- [Troubleshooting](https://developer.devrev.ai/sdks/cordova/troubleshooting): Common issues and solutions for the Cordova SDK.
+
+### DevRev SDK for Flutter
+
+- [Quickstart Guide](https://developer.devrev.ai/sdks/flutter/quickstart): Quickstart guide for adding DevRev support to Flutter applications.
+- [Features](https://developer.devrev.ai/sdks/flutter/features): Overview of features available in the DevRev Flutter SDK.
+- [Migration Guide](https://developer.devrev.ai/sdks/flutter/migration-guide): Guide for migrating to the latest version of the Flutter SDK.
+- [Troubleshooting](https://developer.devrev.ai/sdks/flutter/troubleshooting): Common issues and solutions for the Flutter SDK.
+
+### Push Notifications
+
+- [Push Notifications for Mobile](https://developer.devrev.ai/sdks/push-notifications): How to configure and handle push notifications across DevRev's mobile SDKs.
+
+## Snap-in Development
+
+- [Concepts](https://developer.devrev.ai/snapin-development/concepts): Core concepts behind DevRev snap-ins — the extension framework for automating workflows and integrating external systems with DevRev.
+- [Development Best Practices](https://developer.devrev.ai/snapin-development/best-practices): Recommended patterns and practices for building reliable, production-ready snap-ins.
+- [Locally Testing Snap-ins](https://developer.devrev.ai/snapin-development/locally-testing-snap-ins): How to test snap-ins locally before deploying them to your DevRev organization.
+- [Handling Errors and Retrying](https://developer.devrev.ai/snapin-development/handling-errors-and-retrying): How to handle failures gracefully and implement retry logic in snap-in event handlers.
+- [Debugging](https://developer.devrev.ai/snapin-development/debugging): Tools and techniques for debugging snap-in execution and diagnosing issues.
+- [Quotas and Limits](https://developer.devrev.ai/snapin-development/quotas-limits): Resource quotas, execution time limits, and other constraints that apply to snap-ins.
+- [Upgrade Snap-ins](https://developer.devrev.ai/snapin-development/upgrade-snap-ins): How to safely upgrade existing snap-ins to newer versions without disrupting live workflows.
+- [Code Samples](https://developer.devrev.ai/snapin-development/code-samples): Ready-to-use snap-in code samples to help you build common integration patterns quickly.
+- [Marketplace Listings](https://developer.devrev.ai/snapin-development/marketplace-listings): How to package and publish your snap-in to the DevRev Marketplace for others to install.
+
+### Tutorials
+
+- [Overview](https://developer.devrev.ai/snapin-development/tutorials/overview): Overview of snap-in development tutorials.
+- [Getting Started](https://developer.devrev.ai/snapin-development/tutorials/getting-started): Step-by-step guide to creating your first snap-in.
+- [Using a Snap-in to Perform a DevRev Action](https://developer.devrev.ai/snapin-development/tutorials/timer-ticket-creator): Tutorial on creating a snap-in that performs actions within DevRev.
+- [Using a Snap-in to Perform an External Action](https://developer.devrev.ai/snapin-development/tutorials/perform-external-action): Tutorial on creating a snap-in that interacts with external services.
+- [Snap-in Triggered by a DevRev Event](https://developer.devrev.ai/snapin-development/tutorials/triggered-event): Tutorial on creating event-driven snap-ins.
+- [Snap-in Triggered by an External Source](https://developer.devrev.ai/snapin-development/tutorials/triggered-external-source): Tutorial on creating snap-ins triggered by external webhooks or events.
+
+### References
+
+- [Install DevRev CLI](https://developer.devrev.ai/snapin-development/references/cli-install): How to install the DevRev CLI for snap-in development.
+- [DevRev CLI Reference](https://developer.devrev.ai/snapin-development/references/cli): Complete reference for all DevRev CLI commands.
+- [Snap-in Manifest](https://developer.devrev.ai/snapin-development/references/manifest): Reference for the snap-in manifest file structure and configuration.
+- [Snap-in V1 Manifest](https://developer.devrev.ai/snapin-development/references/v1-manifest): Reference for the legacy V1 snap-in manifest format.
+- [Event Sources](https://developer.devrev.ai/snapin-development/references/event-sources): Reference for all available event sources that can trigger snap-ins.
+- [Inputs](https://developer.devrev.ai/snapin-development/references/inputs): Reference for snap-in input configuration and validation.
+- [Commands](https://developer.devrev.ai/snapin-development/references/commands): Reference for snap-in commands and slash commands.
+- [Functions](https://developer.devrev.ai/snapin-development/references/functions): Reference for snap-in functions and their configuration.
+- [Function Invocation](https://developer.devrev.ai/snapin-development/references/function-invocation): How to invoke snap-in functions programmatically.
+- [Hooks](https://developer.devrev.ai/snapin-development/references/hooks): Reference for snap-in hooks and lifecycle events.
+- [Snapkit](https://developer.devrev.ai/snapin-development/references/snapkit): Reference for the Snapkit SDK used in snap-in development.
+- [Snap Components](https://developer.devrev.ai/snapin-development/references/snap-components): Reference for UI components available in snap-ins.
+- [Snap-in Resources](https://developer.devrev.ai/snapin-development/references/snap-in-resources): Reference for managing snap-in resources and dependencies.
+- [Customizing Snap-in Configuration](https://developer.devrev.ai/snapin-development/references/customizing-snap-in-configuration): How to customize snap-in configuration for different environments.
+
+### Keyrings
+
+- [Keyrings: Securely Connecting Snap-ins to External Services](https://developer.devrev.ai/snapin-development/references/keyrings/keyring-intro): Introduction to keyrings for secure credential management.
+- [OAuth 2.0 Configuration: Securely Storing Access Tokens](https://developer.devrev.ai/snapin-development/references/keyrings/oauth-configuration): How to configure OAuth 2.0 authentication in keyrings.
+- [Secret Configurations: Securely Storing Credentials](https://developer.devrev.ai/snapin-development/references/keyrings/secret-configuration): How to store and manage secrets in keyrings.
+- [Developer Keyrings](https://developer.devrev.ai/snapin-development/references/keyrings/developer-keyring): How to use developer keyrings for local testing.
+
+## AirSync
+
+- [AirSync Overview](https://developer.devrev.ai/airsync): Overview of AirSync — DevRev's framework for syncing data between DevRev and external systems in real time.
+- [Getting Started with AirSync](https://developer.devrev.ai/airsync/getting-started): Step-by-step guide to setting up your first AirSync integration.
+- [Snap-in Examples](https://developer.devrev.ai/airsync/snap-in-examples): Example AirSync snap-ins demonstrating common sync patterns between DevRev and third-party tools.
+- [Deploy to Organization](https://developer.devrev.ai/airsync/deploy-to-organization): How to deploy an AirSync integration to your DevRev organization.
+- [Publish to the Marketplace](https://developer.devrev.ai/airsync/publish-to-marketplace): How to list your AirSync integration on the DevRev Marketplace for public availability.
+- [MCP Integration](https://developer.devrev.ai/airsync/mcp): How to use AirSync with the Model Context Protocol (MCP) to connect DevRev with AI-powered tools and agents.
+- [Common Issues](https://developer.devrev.ai/airsync/faq): Frequently asked questions and common issues encountered when building AirSync integrations.
+- [Supported DevRev Object Types](https://developer.devrev.ai/airsync/supported-object-types): Reference list of all DevRev object types that AirSync supports for bidirectional sync.
+
+### Development Guide
+
+- [Snap-in Template](https://developer.devrev.ai/airsync/snap-in-template): Template for creating AirSync snap-ins.
+- [Local Development](https://developer.devrev.ai/airsync/local-development): How to develop and test AirSync integrations locally.
+- [Manifest](https://developer.devrev.ai/airsync/manifest): Reference for the AirSync manifest file structure.
+- [Extraction Phases](https://developer.devrev.ai/airsync/extraction-phases): Overview of the extraction phases in AirSync data synchronization.
+- [External Sync Units Extraction](https://developer.devrev.ai/airsync/external-sync-units-extraction): How to extract sync units from external systems.
+- [Metadata Extraction](https://developer.devrev.ai/airsync/metadata-extraction): How to extract metadata from external systems.
+- [Initial Domain Mapping](https://developer.devrev.ai/airsync/initial-domain-mapping): How to map external data to DevRev domains.
+- [Data Extraction](https://developer.devrev.ai/airsync/data-extraction): How to extract data from external systems for synchronization.
+- [Attachments Extraction](https://developer.devrev.ai/airsync/extract-attachments): How to extract and sync file attachments.
+- [Customize Attachment Processing](https://developer.devrev.ai/airsync/customize-attachment-processing): How to customize attachment processing in AirSync.
+- [Loading Phases](https://developer.devrev.ai/airsync/loading-phases): Overview of the loading phases in AirSync data synchronization.
+- [Load Data](https://developer.devrev.ai/airsync/load-data): How to load extracted data into DevRev.
+- [Load Attachments](https://developer.devrev.ai/airsync/load-attachments): How to load file attachments into DevRev.
+- [Object Mappers](https://developer.devrev.ai/airsync/object-mappers): How to use object mappers to transform data between systems.
+
+### Data Model
+
+- [Rich Text Fields](https://developer.devrev.ai/airsync/data-model/rich-text-fields): How to handle rich text fields in AirSync.
+- [Permissions](https://developer.devrev.ai/airsync/data-model/permissions): How to manage permissions in AirSync integrations.
+- [Permissions Example](https://developer.devrev.ai/airsync/data-model/permissions-example): Example of permission configuration in AirSync.
+- [Mapping Reasons](https://developer.devrev.ai/airsync/data-model/mapping-reasons): Understanding mapping reasons in AirSync data synchronization.
+
+## Beta API
+
+### About
+
+- [For Developers (Beta)](https://developer.devrev.ai/beta/about/for-developers): Introduction to the DevRev Beta API.
+
+#### Accounts (Beta)
+- [POST accounts.create](https://developer.devrev.ai/beta/api-reference/accounts/create)
+- [POST accounts.delete](https://developer.devrev.ai/beta/api-reference/accounts/delete)
+- [GET accounts.export](https://developer.devrev.ai/beta/api-reference/accounts/export)
+- [POST accounts.export](https://developer.devrev.ai/beta/api-reference/accounts/export-post)
+- [GET accounts.get](https://developer.devrev.ai/beta/api-reference/accounts/get)
+- [POST accounts.get](https://developer.devrev.ai/beta/api-reference/accounts/get-post)
+- [GET accounts.list](https://developer.devrev.ai/beta/api-reference/accounts/list)
+- [POST accounts.list](https://developer.devrev.ai/beta/api-reference/accounts/list-post)
+- [POST accounts.merge](https://developer.devrev.ai/beta/api-reference/accounts/merge)
+- [POST accounts.update](https://developer.devrev.ai/beta/api-reference/accounts/update)
+
+#### Ai Agents (Beta)
+- [POST ai-agents.events.execute-async](https://developer.devrev.ai/beta/api-reference/ai-agents/events/execute-async)
+
+#### Airdrop (Beta)
+- [GET airdrop.sync-units.get](https://developer.devrev.ai/beta/api-reference/airdrop/sync-units/get)
+- [POST airdrop.sync-units.get](https://developer.devrev.ai/beta/api-reference/airdrop/sync-units/get-post)
+- [GET airdrop.sync-units.history](https://developer.devrev.ai/beta/api-reference/airdrop/sync-units/history)
+- [POST airdrop.sync-units.history](https://developer.devrev.ai/beta/api-reference/airdrop/sync-units/history-post)
+
+#### Articles (Beta)
+- [GET articles.count](https://developer.devrev.ai/beta/api-reference/articles/count)
+- [POST articles.count](https://developer.devrev.ai/beta/api-reference/articles/count-post)
+- [POST articles.create](https://developer.devrev.ai/beta/api-reference/articles/create)
+- [POST articles.delete](https://developer.devrev.ai/beta/api-reference/articles/delete)
+- [GET articles.get](https://developer.devrev.ai/beta/api-reference/articles/get)
+- [POST articles.get](https://developer.devrev.ai/beta/api-reference/articles/get-post)
+- [GET articles.list](https://developer.devrev.ai/beta/api-reference/articles/list)
+- [POST articles.list](https://developer.devrev.ai/beta/api-reference/articles/list-post)
+- [POST articles.update](https://developer.devrev.ai/beta/api-reference/articles/update)
+
+#### Artifacts (Beta)
+- [GET artifacts.get](https://developer.devrev.ai/beta/api-reference/artifacts/get)
+- [POST artifacts.get](https://developer.devrev.ai/beta/api-reference/artifacts/get-post)
+- [GET artifacts.list](https://developer.devrev.ai/beta/api-reference/artifacts/list)
+- [POST artifacts.list](https://developer.devrev.ai/beta/api-reference/artifacts/list-post)
+- [GET artifacts.locate](https://developer.devrev.ai/beta/api-reference/artifacts/locate)
+- [POST artifacts.locate](https://developer.devrev.ai/beta/api-reference/artifacts/locate-post)
+- [POST artifacts.prepare](https://developer.devrev.ai/beta/api-reference/artifacts/prepare)
+- [POST artifacts.versions.delete](https://developer.devrev.ai/beta/api-reference/artifacts/versions/delete)
+- [POST artifacts.versions.prepare](https://developer.devrev.ai/beta/api-reference/artifacts/versions/prepare)
+
+#### Atoms (Beta)
+- [GET atoms.get](https://developer.devrev.ai/beta/api-reference/atoms/get)
+- [POST atoms.get](https://developer.devrev.ai/beta/api-reference/atoms/get-post)
+
+#### Audit Logs (Beta)
+- [POST audit-logs.fetch](https://developer.devrev.ai/beta/api-reference/audit-logs/fetch)
+
+#### Auth Tokens (Beta)
+- [POST auth-tokens.create](https://developer.devrev.ai/beta/api-reference/auth-tokens/create)
+- [POST auth-tokens.delete](https://developer.devrev.ai/beta/api-reference/auth-tokens/delete)
+- [GET auth-tokens.get](https://developer.devrev.ai/beta/api-reference/auth-tokens/get)
+- [POST auth-tokens.get](https://developer.devrev.ai/beta/api-reference/auth-tokens/get-post)
+- [GET auth-tokens.info](https://developer.devrev.ai/beta/api-reference/auth-tokens/info)
+- [POST auth-tokens.info](https://developer.devrev.ai/beta/api-reference/auth-tokens/info-post)
+- [GET auth-tokens.list](https://developer.devrev.ai/beta/api-reference/auth-tokens/list)
+- [POST auth-tokens.list](https://developer.devrev.ai/beta/api-reference/auth-tokens/list-post)
+- [POST auth-tokens.self.delete](https://developer.devrev.ai/beta/api-reference/auth-tokens/self/delete)
+- [POST auth-tokens.update](https://developer.devrev.ai/beta/api-reference/auth-tokens/update)
+
+#### Brands (Beta)
+- [POST brands.create](https://developer.devrev.ai/beta/api-reference/brands/create)
+- [POST brands.delete](https://developer.devrev.ai/beta/api-reference/brands/delete)
+- [GET brands.get](https://developer.devrev.ai/beta/api-reference/brands/get)
+- [POST brands.get](https://developer.devrev.ai/beta/api-reference/brands/get-post)
+- [GET brands.list](https://developer.devrev.ai/beta/api-reference/brands/list)
+- [POST brands.list](https://developer.devrev.ai/beta/api-reference/brands/list-post)
+- [POST brands.update](https://developer.devrev.ai/beta/api-reference/brands/update)
+
+#### Chats (Beta)
+- [POST chats.create](https://developer.devrev.ai/beta/api-reference/chats/create)
+- [GET chats.get](https://developer.devrev.ai/beta/api-reference/chats/get)
+- [POST chats.get](https://developer.devrev.ai/beta/api-reference/chats/get-post)
+- [POST chats.update](https://developer.devrev.ai/beta/api-reference/chats/update)
+
+#### Code Changes (Beta)
+- [POST code-changes.create](https://developer.devrev.ai/beta/api-reference/code-changes/create)
+- [POST code-changes.delete](https://developer.devrev.ai/beta/api-reference/code-changes/delete)
+- [GET code-changes.get](https://developer.devrev.ai/beta/api-reference/code-changes/get)
+- [POST code-changes.get](https://developer.devrev.ai/beta/api-reference/code-changes/get-post)
+- [GET code-changes.list](https://developer.devrev.ai/beta/api-reference/code-changes/list)
+- [POST code-changes.list](https://developer.devrev.ai/beta/api-reference/code-changes/list-post)
+- [POST code-changes.update](https://developer.devrev.ai/beta/api-reference/code-changes/update)
+
+#### Commands (Beta)
+- [POST commands.create](https://developer.devrev.ai/beta/api-reference/commands/create)
+- [GET commands.get](https://developer.devrev.ai/beta/api-reference/commands/get)
+- [POST commands.get](https://developer.devrev.ai/beta/api-reference/commands/get-post)
+- [GET commands.list](https://developer.devrev.ai/beta/api-reference/commands/list)
+- [POST commands.list](https://developer.devrev.ai/beta/api-reference/commands/list-post)
+- [POST commands.update](https://developer.devrev.ai/beta/api-reference/commands/update)
+
+#### Content Template (Beta)
+- [POST content-template.create](https://developer.devrev.ai/beta/api-reference/content-template/create)
+- [GET content-template.get](https://developer.devrev.ai/beta/api-reference/content-template/get)
+- [POST content-template.get](https://developer.devrev.ai/beta/api-reference/content-template/get-post)
+- [GET content-template.list](https://developer.devrev.ai/beta/api-reference/content-template/list)
+- [POST content-template.list](https://developer.devrev.ai/beta/api-reference/content-template/list-post)
+
+#### Conversations (Beta)
+- [POST conversations.create](https://developer.devrev.ai/beta/api-reference/conversations/create)
+- [POST conversations.delete](https://developer.devrev.ai/beta/api-reference/conversations/delete)
+- [GET conversations.export](https://developer.devrev.ai/beta/api-reference/conversations/export)
+- [POST conversations.export](https://developer.devrev.ai/beta/api-reference/conversations/export-post)
+- [GET conversations.get](https://developer.devrev.ai/beta/api-reference/conversations/get)
+- [POST conversations.get](https://developer.devrev.ai/beta/api-reference/conversations/get-post)
+- [GET conversations.list](https://developer.devrev.ai/beta/api-reference/conversations/list)
+- [POST conversations.list](https://developer.devrev.ai/beta/api-reference/conversations/list-post)
+- [POST conversations.update](https://developer.devrev.ai/beta/api-reference/conversations/update)
+
+#### Custom Objects (Beta)
+- [GET custom-objects.count](https://developer.devrev.ai/beta/api-reference/custom-objects/count)
+- [POST custom-objects.count](https://developer.devrev.ai/beta/api-reference/custom-objects/count-post)
+- [POST custom-objects.create](https://developer.devrev.ai/beta/api-reference/custom-objects/create)
+- [POST custom-objects.delete](https://developer.devrev.ai/beta/api-reference/custom-objects/delete)
+- [GET custom-objects.get](https://developer.devrev.ai/beta/api-reference/custom-objects/get)
+- [POST custom-objects.get](https://developer.devrev.ai/beta/api-reference/custom-objects/get-post)
+- [GET custom-objects.list](https://developer.devrev.ai/beta/api-reference/custom-objects/list)
+- [POST custom-objects.list](https://developer.devrev.ai/beta/api-reference/custom-objects/list-post)
+- [POST custom-objects.update](https://developer.devrev.ai/beta/api-reference/custom-objects/update)
+
+#### Dev Orgs (Beta)
+- [POST dev-orgs.auth-connections.create](https://developer.devrev.ai/beta/api-reference/dev-orgs/auth-connections/create)
+- [POST dev-orgs.auth-connections.delete](https://developer.devrev.ai/beta/api-reference/dev-orgs/auth-connections/delete)
+- [GET dev-orgs.auth-connections.get](https://developer.devrev.ai/beta/api-reference/dev-orgs/auth-connections/get)
+- [POST dev-orgs.auth-connections.get](https://developer.devrev.ai/beta/api-reference/dev-orgs/auth-connections/get-post)
+- [GET dev-orgs.auth-connections.list](https://developer.devrev.ai/beta/api-reference/dev-orgs/auth-connections/list)
+- [POST dev-orgs.auth-connections.list](https://developer.devrev.ai/beta/api-reference/dev-orgs/auth-connections/list-post)
+- [POST dev-orgs.auth-connections.toggle](https://developer.devrev.ai/beta/api-reference/dev-orgs/auth-connections/toggle)
+- [POST dev-orgs.auth-connections.update](https://developer.devrev.ai/beta/api-reference/dev-orgs/auth-connections/update)
+- [GET dev-orgs.get](https://developer.devrev.ai/beta/api-reference/dev-orgs/get)
+- [POST dev-orgs.get](https://developer.devrev.ai/beta/api-reference/dev-orgs/get-post)
+
+#### Dev Users (Beta)
+- [POST dev-users.activate](https://developer.devrev.ai/beta/api-reference/dev-users/activate)
+- [POST dev-users.create](https://developer.devrev.ai/beta/api-reference/dev-users/create)
+- [POST dev-users.deactivate](https://developer.devrev.ai/beta/api-reference/dev-users/deactivate)
+- [GET dev-users.get](https://developer.devrev.ai/beta/api-reference/dev-users/get)
+- [POST dev-users.get](https://developer.devrev.ai/beta/api-reference/dev-users/get-post)
+- [POST dev-users.identities.link](https://developer.devrev.ai/beta/api-reference/dev-users/identities/link)
+- [POST dev-users.identities.unlink](https://developer.devrev.ai/beta/api-reference/dev-users/identities/unlink)
+- [GET dev-users.list](https://developer.devrev.ai/beta/api-reference/dev-users/list)
+- [POST dev-users.list](https://developer.devrev.ai/beta/api-reference/dev-users/list-post)
+- [POST dev-users.merge](https://developer.devrev.ai/beta/api-reference/dev-users/merge)
+- [GET dev-users.self](https://developer.devrev.ai/beta/api-reference/dev-users/self)
+- [POST dev-users.self](https://developer.devrev.ai/beta/api-reference/dev-users/self-post)
+- [POST dev-users.self.update](https://developer.devrev.ai/beta/api-reference/dev-users/self/update)
+- [POST dev-users.update](https://developer.devrev.ai/beta/api-reference/dev-users/update)
+
+#### Directories (Beta)
+- [GET directories.count](https://developer.devrev.ai/beta/api-reference/directories/count)
+- [POST directories.count](https://developer.devrev.ai/beta/api-reference/directories/count-post)
+- [POST directories.create](https://developer.devrev.ai/beta/api-reference/directories/create)
+- [POST directories.delete](https://developer.devrev.ai/beta/api-reference/directories/delete)
+- [GET directories.get](https://developer.devrev.ai/beta/api-reference/directories/get)
+- [POST directories.get](https://developer.devrev.ai/beta/api-reference/directories/get-post)
+- [GET directories.list](https://developer.devrev.ai/beta/api-reference/directories/list)
+- [POST directories.list](https://developer.devrev.ai/beta/api-reference/directories/list-post)
+- [POST directories.update](https://developer.devrev.ai/beta/api-reference/directories/update)
+
+#### Engagements (Beta)
+- [GET engagements.count](https://developer.devrev.ai/beta/api-reference/engagements/count)
+- [POST engagements.count](https://developer.devrev.ai/beta/api-reference/engagements/count-post)
+- [POST engagements.create](https://developer.devrev.ai/beta/api-reference/engagements/create)
+- [POST engagements.delete](https://developer.devrev.ai/beta/api-reference/engagements/delete)
+- [GET engagements.get](https://developer.devrev.ai/beta/api-reference/engagements/get)
+- [POST engagements.get](https://developer.devrev.ai/beta/api-reference/engagements/get-post)
+- [GET engagements.list](https://developer.devrev.ai/beta/api-reference/engagements/list)
+- [POST engagements.list](https://developer.devrev.ai/beta/api-reference/engagements/list-post)
+- [POST engagements.update](https://developer.devrev.ai/beta/api-reference/engagements/update)
+
+#### Event Sources (Beta)
+- [GET event-sources.get](https://developer.devrev.ai/beta/api-reference/event-sources/get)
+- [POST event-sources.get](https://developer.devrev.ai/beta/api-reference/event-sources/get-post)
+- [POST event-sources.schedule](https://developer.devrev.ai/beta/api-reference/event-sources/schedule)
+- [POST event-sources.unschedule](https://developer.devrev.ai/beta/api-reference/event-sources/unschedule)
+
+#### Groups (Beta)
+- [POST groups.create](https://developer.devrev.ai/beta/api-reference/groups/create)
+- [GET groups.get](https://developer.devrev.ai/beta/api-reference/groups/get)
+- [POST groups.get](https://developer.devrev.ai/beta/api-reference/groups/get-post)
+- [GET groups.list](https://developer.devrev.ai/beta/api-reference/groups/list)
+- [POST groups.list](https://developer.devrev.ai/beta/api-reference/groups/list-post)
+- [POST groups.members.add](https://developer.devrev.ai/beta/api-reference/groups/members/add)
+- [GET groups.members.list](https://developer.devrev.ai/beta/api-reference/groups/members/list)
+- [POST groups.members.list](https://developer.devrev.ai/beta/api-reference/groups/members/list-post)
+- [POST groups.members.remove](https://developer.devrev.ai/beta/api-reference/groups/members/remove)
+- [POST groups.update](https://developer.devrev.ai/beta/api-reference/groups/update)
+
+#### Incidents (Beta)
+- [POST incidents.create](https://developer.devrev.ai/beta/api-reference/incidents/create)
+- [POST incidents.delete](https://developer.devrev.ai/beta/api-reference/incidents/delete)
+- [GET incidents.get](https://developer.devrev.ai/beta/api-reference/incidents/get)
+- [POST incidents.get](https://developer.devrev.ai/beta/api-reference/incidents/get-post)
+- [GET incidents.group](https://developer.devrev.ai/beta/api-reference/incidents/group)
+- [POST incidents.group](https://developer.devrev.ai/beta/api-reference/incidents/group-post)
+- [GET incidents.list](https://developer.devrev.ai/beta/api-reference/incidents/list)
+- [POST incidents.list](https://developer.devrev.ai/beta/api-reference/incidents/list-post)
+- [POST incidents.update](https://developer.devrev.ai/beta/api-reference/incidents/update)
+
+#### Keyrings (Beta)
+- [GET keyrings.authorize](https://developer.devrev.ai/beta/api-reference/keyrings/authorize)
+- [POST keyrings.authorize](https://developer.devrev.ai/beta/api-reference/keyrings/authorize-post)
+
+#### Link Types (Beta)
+- [POST link-types.custom.create](https://developer.devrev.ai/beta/api-reference/link-types/custom/create)
+- [GET link-types.custom.get](https://developer.devrev.ai/beta/api-reference/link-types/custom/get)
+- [POST link-types.custom.get](https://developer.devrev.ai/beta/api-reference/link-types/custom/get-post)
+- [GET link-types.custom.list](https://developer.devrev.ai/beta/api-reference/link-types/custom/list)
+- [POST link-types.custom.list](https://developer.devrev.ai/beta/api-reference/link-types/custom/list-post)
+- [POST link-types.custom.update](https://developer.devrev.ai/beta/api-reference/link-types/custom/update)
+
+#### Links (Beta)
+- [POST links.create](https://developer.devrev.ai/beta/api-reference/links/create)
+- [POST links.delete](https://developer.devrev.ai/beta/api-reference/links/delete)
+- [GET links.get](https://developer.devrev.ai/beta/api-reference/links/get)
+- [POST links.get](https://developer.devrev.ai/beta/api-reference/links/get-post)
+- [GET links.list](https://developer.devrev.ai/beta/api-reference/links/list)
+- [POST links.list](https://developer.devrev.ai/beta/api-reference/links/list-post)
+- [POST links.replace](https://developer.devrev.ai/beta/api-reference/links/replace)
+
+#### Meetings (Beta)
+- [GET meetings.count](https://developer.devrev.ai/beta/api-reference/meetings/count)
+- [POST meetings.count](https://developer.devrev.ai/beta/api-reference/meetings/count-post)
+- [POST meetings.create](https://developer.devrev.ai/beta/api-reference/meetings/create)
+- [POST meetings.delete](https://developer.devrev.ai/beta/api-reference/meetings/delete)
+- [GET meetings.get](https://developer.devrev.ai/beta/api-reference/meetings/get)
+- [POST meetings.get](https://developer.devrev.ai/beta/api-reference/meetings/get-post)
+- [GET meetings.list](https://developer.devrev.ai/beta/api-reference/meetings/list)
+- [POST meetings.list](https://developer.devrev.ai/beta/api-reference/meetings/list-post)
+- [POST meetings.update](https://developer.devrev.ai/beta/api-reference/meetings/update)
+
+#### Metric Action (Beta)
+- [POST metric-action.execute](https://developer.devrev.ai/beta/api-reference/metric-action/execute)
+
+#### Metric Definitions (Beta)
+- [POST metric-definitions.create](https://developer.devrev.ai/beta/api-reference/metric-definitions/create)
+- [POST metric-definitions.delete](https://developer.devrev.ai/beta/api-reference/metric-definitions/delete)
+- [GET metric-definitions.get](https://developer.devrev.ai/beta/api-reference/metric-definitions/get)
+- [POST metric-definitions.get](https://developer.devrev.ai/beta/api-reference/metric-definitions/get-post)
+- [GET metric-definitions.list](https://developer.devrev.ai/beta/api-reference/metric-definitions/list)
+- [POST metric-definitions.list](https://developer.devrev.ai/beta/api-reference/metric-definitions/list-post)
+- [POST metric-definitions.update](https://developer.devrev.ai/beta/api-reference/metric-definitions/update)
+
+#### Metric Trackers (Beta)
+- [GET metric-trackers.get](https://developer.devrev.ai/beta/api-reference/metric-trackers/get)
+- [POST metric-trackers.get](https://developer.devrev.ai/beta/api-reference/metric-trackers/get-post)
+
+#### Metrics (Beta)
+- [POST metrics.devrev.ingest](https://developer.devrev.ai/beta/api-reference/metrics/devrev/ingest)
+
+#### Notifications (Beta)
+- [POST notifications.send](https://developer.devrev.ai/beta/api-reference/notifications/send)
+
+#### Org Schedule Fragments (Beta)
+- [POST org-schedule-fragments.create](https://developer.devrev.ai/beta/api-reference/org-schedule-fragments/create)
+- [GET org-schedule-fragments.get](https://developer.devrev.ai/beta/api-reference/org-schedule-fragments/get)
+- [POST org-schedule-fragments.get](https://developer.devrev.ai/beta/api-reference/org-schedule-fragments/get-post)
+- [POST org-schedule-fragments.transition](https://developer.devrev.ai/beta/api-reference/org-schedule-fragments/transition)
+
+#### Org Schedules (Beta)
+- [POST org-schedules.create](https://developer.devrev.ai/beta/api-reference/org-schedules/create)
+- [GET org-schedules.evaluate](https://developer.devrev.ai/beta/api-reference/org-schedules/evaluate)
+- [POST org-schedules.evaluate](https://developer.devrev.ai/beta/api-reference/org-schedules/evaluate-post)
+- [GET org-schedules.get](https://developer.devrev.ai/beta/api-reference/org-schedules/get)
+- [POST org-schedules.get](https://developer.devrev.ai/beta/api-reference/org-schedules/get-post)
+- [GET org-schedules.list](https://developer.devrev.ai/beta/api-reference/org-schedules/list)
+- [POST org-schedules.list](https://developer.devrev.ai/beta/api-reference/org-schedules/list-post)
+- [POST org-schedules.set-future](https://developer.devrev.ai/beta/api-reference/org-schedules/set-future)
+- [POST org-schedules.transition](https://developer.devrev.ai/beta/api-reference/org-schedules/transition)
+- [POST org-schedules.update](https://developer.devrev.ai/beta/api-reference/org-schedules/update)
+
+#### Parts (Beta)
+- [POST parts.create](https://developer.devrev.ai/beta/api-reference/parts/create)
+- [POST parts.delete](https://developer.devrev.ai/beta/api-reference/parts/delete)
+- [GET parts.get](https://developer.devrev.ai/beta/api-reference/parts/get)
+- [POST parts.get](https://developer.devrev.ai/beta/api-reference/parts/get-post)
+- [GET parts.list](https://developer.devrev.ai/beta/api-reference/parts/list)
+- [POST parts.list](https://developer.devrev.ai/beta/api-reference/parts/list-post)
+- [POST parts.update](https://developer.devrev.ai/beta/api-reference/parts/update)
+
+#### Preferences (Beta)
+- [GET preferences.get](https://developer.devrev.ai/beta/api-reference/preferences/get)
+- [POST preferences.get](https://developer.devrev.ai/beta/api-reference/preferences/get-post)
+- [POST preferences.update](https://developer.devrev.ai/beta/api-reference/preferences/update)
+
+#### Question Answers (Beta)
+- [POST question-answers.create](https://developer.devrev.ai/beta/api-reference/question-answers/create)
+- [POST question-answers.delete](https://developer.devrev.ai/beta/api-reference/question-answers/delete)
+- [GET question-answers.get](https://developer.devrev.ai/beta/api-reference/question-answers/get)
+- [POST question-answers.get](https://developer.devrev.ai/beta/api-reference/question-answers/get-post)
+- [GET question-answers.list](https://developer.devrev.ai/beta/api-reference/question-answers/list)
+- [POST question-answers.list](https://developer.devrev.ai/beta/api-reference/question-answers/list-post)
+- [POST question-answers.update](https://developer.devrev.ai/beta/api-reference/question-answers/update)
+
+#### Reactions (Beta)
+- [GET reactions.list](https://developer.devrev.ai/beta/api-reference/reactions/list)
+- [POST reactions.list](https://developer.devrev.ai/beta/api-reference/reactions/list-post)
+- [POST reactions.update](https://developer.devrev.ai/beta/api-reference/reactions/update)
+
+#### Recommendations (Beta)
+- [POST recommendations.chat.completions](https://developer.devrev.ai/beta/api-reference/recommendations/chat/completions)
+- [POST recommendations.get-reply](https://developer.devrev.ai/beta/api-reference/recommendations/get-reply)
+
+#### Record Templates (Beta)
+- [GET record-templates.get](https://developer.devrev.ai/beta/api-reference/record-templates/get)
+- [POST record-templates.get](https://developer.devrev.ai/beta/api-reference/record-templates/get-post)
+
+#### Rev Orgs (Beta)
+- [POST rev-orgs.create](https://developer.devrev.ai/beta/api-reference/rev-orgs/create)
+- [POST rev-orgs.delete](https://developer.devrev.ai/beta/api-reference/rev-orgs/delete)
+- [GET rev-orgs.get](https://developer.devrev.ai/beta/api-reference/rev-orgs/get)
+- [POST rev-orgs.get](https://developer.devrev.ai/beta/api-reference/rev-orgs/get-post)
+- [GET rev-orgs.list](https://developer.devrev.ai/beta/api-reference/rev-orgs/list)
+- [POST rev-orgs.list](https://developer.devrev.ai/beta/api-reference/rev-orgs/list-post)
+- [POST rev-orgs.update](https://developer.devrev.ai/beta/api-reference/rev-orgs/update)
+
+#### Rev Users (Beta)
+- [POST rev-users.associations.add](https://developer.devrev.ai/beta/api-reference/rev-users/associations/add)
+- [GET rev-users.associations.list](https://developer.devrev.ai/beta/api-reference/rev-users/associations/list)
+- [POST rev-users.associations.list](https://developer.devrev.ai/beta/api-reference/rev-users/associations/list-post)
+- [POST rev-users.associations.remove](https://developer.devrev.ai/beta/api-reference/rev-users/associations/remove)
+- [POST rev-users.create](https://developer.devrev.ai/beta/api-reference/rev-users/create)
+- [POST rev-users.delete](https://developer.devrev.ai/beta/api-reference/rev-users/delete)
+- [POST rev-users.delete-personal-data](https://developer.devrev.ai/beta/api-reference/rev-users/delete-personal-data)
+- [GET rev-users.get](https://developer.devrev.ai/beta/api-reference/rev-users/get)
+- [POST rev-users.get](https://developer.devrev.ai/beta/api-reference/rev-users/get-post)
+- [POST rev-users.link](https://developer.devrev.ai/beta/api-reference/rev-users/link)
+- [GET rev-users.list](https://developer.devrev.ai/beta/api-reference/rev-users/list)
+- [POST rev-users.list](https://developer.devrev.ai/beta/api-reference/rev-users/list-post)
+- [POST rev-users.merge](https://developer.devrev.ai/beta/api-reference/rev-users/merge)
+- [POST rev-users.personal-data](https://developer.devrev.ai/beta/api-reference/rev-users/personal-data)
+- [GET rev-users.scan](https://developer.devrev.ai/beta/api-reference/rev-users/scan)
+- [POST rev-users.scan](https://developer.devrev.ai/beta/api-reference/rev-users/scan-post)
+- [POST rev-users.unlink](https://developer.devrev.ai/beta/api-reference/rev-users/unlink)
+- [POST rev-users.update](https://developer.devrev.ai/beta/api-reference/rev-users/update)
+
+#### Roles (Beta)
+- [POST roles.apply](https://developer.devrev.ai/beta/api-reference/roles/apply)
+- [POST roles.create](https://developer.devrev.ai/beta/api-reference/roles/create)
+
+#### Schemas (Beta)
+- [GET schemas.aggregated.get](https://developer.devrev.ai/beta/api-reference/schemas/aggregated/get)
+- [POST schemas.aggregated.get](https://developer.devrev.ai/beta/api-reference/schemas/aggregated/get-post)
+- [GET schemas.custom.get](https://developer.devrev.ai/beta/api-reference/schemas/custom/get)
+- [POST schemas.custom.get](https://developer.devrev.ai/beta/api-reference/schemas/custom/get-post)
+- [GET schemas.custom.list](https://developer.devrev.ai/beta/api-reference/schemas/custom/list)
+- [POST schemas.custom.list](https://developer.devrev.ai/beta/api-reference/schemas/custom/list-post)
+- [POST schemas.custom.set](https://developer.devrev.ai/beta/api-reference/schemas/custom/set)
+- [GET schemas.stock.get](https://developer.devrev.ai/beta/api-reference/schemas/stock/get)
+- [POST schemas.stock.get](https://developer.devrev.ai/beta/api-reference/schemas/stock/get-post)
+- [GET schemas.stock.list](https://developer.devrev.ai/beta/api-reference/schemas/stock/list)
+- [POST schemas.stock.list](https://developer.devrev.ai/beta/api-reference/schemas/stock/list-post)
+- [GET schemas.subtypes.list](https://developer.devrev.ai/beta/api-reference/schemas/subtypes/list)
+- [POST schemas.subtypes.list](https://developer.devrev.ai/beta/api-reference/schemas/subtypes/list-post)
+- [POST schemas.subtypes.prepare-update](https://developer.devrev.ai/beta/api-reference/schemas/subtypes/prepare-update)
+
+#### Search (Beta)
+- [GET search.core](https://developer.devrev.ai/beta/api-reference/search/core)
+- [POST search.core](https://developer.devrev.ai/beta/api-reference/search/core-post)
+- [GET search.hybrid](https://developer.devrev.ai/beta/api-reference/search/hybrid)
+- [POST search.hybrid](https://developer.devrev.ai/beta/api-reference/search/hybrid-post)
+
+#### Service Accounts (Beta)
+- [POST service-accounts.create](https://developer.devrev.ai/beta/api-reference/service-accounts/create)
+- [GET service-accounts.get](https://developer.devrev.ai/beta/api-reference/service-accounts/get)
+- [POST service-accounts.get](https://developer.devrev.ai/beta/api-reference/service-accounts/get-post)
+- [POST service-accounts.update](https://developer.devrev.ai/beta/api-reference/service-accounts/update)
+
+#### Sla Trackers (Beta)
+- [GET sla-trackers.get](https://developer.devrev.ai/beta/api-reference/sla-trackers/get)
+- [POST sla-trackers.get](https://developer.devrev.ai/beta/api-reference/sla-trackers/get-post)
+- [GET sla-trackers.list](https://developer.devrev.ai/beta/api-reference/sla-trackers/list)
+- [POST sla-trackers.list](https://developer.devrev.ai/beta/api-reference/sla-trackers/list-post)
+- [POST sla-trackers.remove-metric](https://developer.devrev.ai/beta/api-reference/sla-trackers/remove-metric)
+
+#### Slas (Beta)
+- [POST slas.assign](https://developer.devrev.ai/beta/api-reference/slas/assign)
+- [POST slas.create](https://developer.devrev.ai/beta/api-reference/slas/create)
+- [GET slas.get](https://developer.devrev.ai/beta/api-reference/slas/get)
+- [POST slas.get](https://developer.devrev.ai/beta/api-reference/slas/get-post)
+- [GET slas.list](https://developer.devrev.ai/beta/api-reference/slas/list)
+- [POST slas.list](https://developer.devrev.ai/beta/api-reference/slas/list-post)
+- [POST slas.transition](https://developer.devrev.ai/beta/api-reference/slas/transition)
+- [POST slas.update](https://developer.devrev.ai/beta/api-reference/slas/update)
+
+#### Snap Ins (Beta)
+- [GET snap-ins.resources](https://developer.devrev.ai/beta/api-reference/snap-ins/resources)
+- [POST snap-ins.resources](https://developer.devrev.ai/beta/api-reference/snap-ins/resources-post)
+- [POST snap-ins.update](https://developer.devrev.ai/beta/api-reference/snap-ins/update)
+
+#### Snap Kit Action (Beta)
+- [POST snap-kit-action.execute.deferred](https://developer.devrev.ai/beta/api-reference/snap-kit-action/execute/deferred)
+
+#### Snap Widgets (Beta)
+- [POST snap-widgets.create](https://developer.devrev.ai/beta/api-reference/snap-widgets/create)
+
+#### Stage Diagrams (Beta)
+- [POST stage-diagrams.create](https://developer.devrev.ai/beta/api-reference/stage-diagrams/create)
+- [GET stage-diagrams.get](https://developer.devrev.ai/beta/api-reference/stage-diagrams/get)
+- [POST stage-diagrams.get](https://developer.devrev.ai/beta/api-reference/stage-diagrams/get-post)
+- [GET stage-diagrams.list](https://developer.devrev.ai/beta/api-reference/stage-diagrams/list)
+- [POST stage-diagrams.list](https://developer.devrev.ai/beta/api-reference/stage-diagrams/list-post)
+- [POST stage-diagrams.update](https://developer.devrev.ai/beta/api-reference/stage-diagrams/update)
+
+#### Stages (Beta)
+- [POST stages.custom.create](https://developer.devrev.ai/beta/api-reference/stages/custom/create)
+- [GET stages.custom.get](https://developer.devrev.ai/beta/api-reference/stages/custom/get)
+- [POST stages.custom.get](https://developer.devrev.ai/beta/api-reference/stages/custom/get-post)
+- [GET stages.custom.list](https://developer.devrev.ai/beta/api-reference/stages/custom/list)
+- [POST stages.custom.list](https://developer.devrev.ai/beta/api-reference/stages/custom/list-post)
+- [POST stages.custom.update](https://developer.devrev.ai/beta/api-reference/stages/custom/update)
+
+#### States (Beta)
+- [POST states.custom.create](https://developer.devrev.ai/beta/api-reference/states/custom/create)
+- [GET states.custom.get](https://developer.devrev.ai/beta/api-reference/states/custom/get)
+- [POST states.custom.get](https://developer.devrev.ai/beta/api-reference/states/custom/get-post)
+- [GET states.custom.list](https://developer.devrev.ai/beta/api-reference/states/custom/list)
+- [POST states.custom.list](https://developer.devrev.ai/beta/api-reference/states/custom/list-post)
+- [POST states.custom.update](https://developer.devrev.ai/beta/api-reference/states/custom/update)
+
+#### Subscribers (Beta)
+- [GET subscribers.list](https://developer.devrev.ai/beta/api-reference/subscribers/list)
+- [POST subscribers.list](https://developer.devrev.ai/beta/api-reference/subscribers/list-post)
+- [POST subscribers.update](https://developer.devrev.ai/beta/api-reference/subscribers/update)
+
+#### Surveys (Beta)
+- [POST surveys.create](https://developer.devrev.ai/beta/api-reference/surveys/create)
+- [POST surveys.delete](https://developer.devrev.ai/beta/api-reference/surveys/delete)
+- [GET surveys.get](https://developer.devrev.ai/beta/api-reference/surveys/get)
+- [POST surveys.get](https://developer.devrev.ai/beta/api-reference/surveys/get-post)
+- [GET surveys.list](https://developer.devrev.ai/beta/api-reference/surveys/list)
+- [POST surveys.list](https://developer.devrev.ai/beta/api-reference/surveys/list-post)
+- [GET surveys.responses.list](https://developer.devrev.ai/beta/api-reference/surveys/responses/list)
+- [POST surveys.responses.list](https://developer.devrev.ai/beta/api-reference/surveys/responses/list-post)
+- [POST surveys.responses.update](https://developer.devrev.ai/beta/api-reference/surveys/responses/update)
+- [POST surveys.send](https://developer.devrev.ai/beta/api-reference/surveys/send)
+- [POST surveys.submit](https://developer.devrev.ai/beta/api-reference/surveys/submit)
+- [POST surveys.update](https://developer.devrev.ai/beta/api-reference/surveys/update)
+
+#### Sys Users (Beta)
+- [GET sys-users.list](https://developer.devrev.ai/beta/api-reference/sys-users/list)
+- [POST sys-users.list](https://developer.devrev.ai/beta/api-reference/sys-users/list-post)
+- [POST sys-users.update](https://developer.devrev.ai/beta/api-reference/sys-users/update)
+
+#### Tags (Beta)
+- [POST tags.create](https://developer.devrev.ai/beta/api-reference/tags/create)
+- [POST tags.delete](https://developer.devrev.ai/beta/api-reference/tags/delete)
+- [GET tags.get](https://developer.devrev.ai/beta/api-reference/tags/get)
+- [POST tags.get](https://developer.devrev.ai/beta/api-reference/tags/get-post)
+- [GET tags.list](https://developer.devrev.ai/beta/api-reference/tags/list)
+- [POST tags.list](https://developer.devrev.ai/beta/api-reference/tags/list-post)
+- [POST tags.update](https://developer.devrev.ai/beta/api-reference/tags/update)
+
+#### Timeline Entries (Beta)
+- [POST timeline-entries.create](https://developer.devrev.ai/beta/api-reference/timeline-entries/create)
+- [POST timeline-entries.delete](https://developer.devrev.ai/beta/api-reference/timeline-entries/delete)
+- [GET timeline-entries.get](https://developer.devrev.ai/beta/api-reference/timeline-entries/get)
+- [POST timeline-entries.get](https://developer.devrev.ai/beta/api-reference/timeline-entries/get-post)
+- [GET timeline-entries.list](https://developer.devrev.ai/beta/api-reference/timeline-entries/list)
+- [POST timeline-entries.list](https://developer.devrev.ai/beta/api-reference/timeline-entries/list-post)
+- [POST timeline-entries.update](https://developer.devrev.ai/beta/api-reference/timeline-entries/update)
+
+#### Track Events (Beta)
+- [POST track-events.publish](https://developer.devrev.ai/beta/api-reference/track-events/publish)
+
+#### Uoms (Beta)
+- [GET uoms.count](https://developer.devrev.ai/beta/api-reference/uoms/count)
+- [POST uoms.count](https://developer.devrev.ai/beta/api-reference/uoms/count-post)
+- [POST uoms.create](https://developer.devrev.ai/beta/api-reference/uoms/create)
+- [POST uoms.delete](https://developer.devrev.ai/beta/api-reference/uoms/delete)
+- [GET uoms.get](https://developer.devrev.ai/beta/api-reference/uoms/get)
+- [POST uoms.get](https://developer.devrev.ai/beta/api-reference/uoms/get-post)
+- [GET uoms.list](https://developer.devrev.ai/beta/api-reference/uoms/list)
+- [POST uoms.list](https://developer.devrev.ai/beta/api-reference/uoms/list-post)
+- [POST uoms.update](https://developer.devrev.ai/beta/api-reference/uoms/update)
+
+#### Vistas (Beta)
+- [POST vistas.create](https://developer.devrev.ai/beta/api-reference/vistas/create)
+- [POST vistas.delete](https://developer.devrev.ai/beta/api-reference/vistas/delete)
+- [GET vistas.get](https://developer.devrev.ai/beta/api-reference/vistas/get)
+- [POST vistas.get](https://developer.devrev.ai/beta/api-reference/vistas/get-post)
+- [POST vistas.groups.delete](https://developer.devrev.ai/beta/api-reference/vistas/groups/delete)
+- [GET vistas.groups.get](https://developer.devrev.ai/beta/api-reference/vistas/groups/get)
+- [POST vistas.groups.get](https://developer.devrev.ai/beta/api-reference/vistas/groups/get-post)
+- [GET vistas.groups.list](https://developer.devrev.ai/beta/api-reference/vistas/groups/list)
+- [POST vistas.groups.list](https://developer.devrev.ai/beta/api-reference/vistas/groups/list-post)
+- [GET vistas.list](https://developer.devrev.ai/beta/api-reference/vistas/list)
+- [POST vistas.list](https://developer.devrev.ai/beta/api-reference/vistas/list-post)
+
+#### Web Crawler Jobs (Beta)
+- [POST web-crawler-jobs.control](https://developer.devrev.ai/beta/api-reference/web-crawler-jobs/control)
+- [POST web-crawler-jobs.create](https://developer.devrev.ai/beta/api-reference/web-crawler-jobs/create)
+- [GET web-crawler-jobs.get](https://developer.devrev.ai/beta/api-reference/web-crawler-jobs/get)
+- [POST web-crawler-jobs.get](https://developer.devrev.ai/beta/api-reference/web-crawler-jobs/get-post)
+- [GET web-crawler-jobs.list](https://developer.devrev.ai/beta/api-reference/web-crawler-jobs/list)
+- [POST web-crawler-jobs.list](https://developer.devrev.ai/beta/api-reference/web-crawler-jobs/list-post)
+
+#### Webhooks (Beta)
+- [POST webhooks.create](https://developer.devrev.ai/beta/api-reference/webhooks/create)
+- [POST webhooks.delete](https://developer.devrev.ai/beta/api-reference/webhooks/delete)
+- [POST webhooks.event](https://developer.devrev.ai/beta/api-reference/webhooks/event)
+- [POST webhooks.fetch](https://developer.devrev.ai/beta/api-reference/webhooks/fetch)
+- [GET webhooks.get](https://developer.devrev.ai/beta/api-reference/webhooks/get)
+- [POST webhooks.get](https://developer.devrev.ai/beta/api-reference/webhooks/get-post)
+- [GET webhooks.list](https://developer.devrev.ai/beta/api-reference/webhooks/list)
+- [POST webhooks.list](https://developer.devrev.ai/beta/api-reference/webhooks/list-post)
+- [POST webhooks.update](https://developer.devrev.ai/beta/api-reference/webhooks/update)
+
+#### Widgets (Beta)
+- [GET widgets.get](https://developer.devrev.ai/beta/api-reference/widgets/get)
+- [POST widgets.get](https://developer.devrev.ai/beta/api-reference/widgets/get-post)
+
+#### Works (Beta)
+- [POST works.create](https://developer.devrev.ai/beta/api-reference/works/create)
+- [POST works.delete](https://developer.devrev.ai/beta/api-reference/works/delete)
+- [GET works.export](https://developer.devrev.ai/beta/api-reference/works/export)
+- [POST works.export](https://developer.devrev.ai/beta/api-reference/works/export-post)
+- [GET works.get](https://developer.devrev.ai/beta/api-reference/works/get)
+- [POST works.get](https://developer.devrev.ai/beta/api-reference/works/get-post)
+- [GET works.list](https://developer.devrev.ai/beta/api-reference/works/list)
+- [POST works.list](https://developer.devrev.ai/beta/api-reference/works/list-post)
+- [POST works.update](https://developer.devrev.ai/beta/api-reference/works/update)
+
+### Beta Guides
+
+- [Account Creation](https://developer.devrev.ai/beta/guides/account-creation): Guide for creating accounts using the Beta API.
+- [Agents Async API](https://developer.devrev.ai/beta/guides/agents-async-api): How to use the asynchronous agents API.
+- [Links](https://developer.devrev.ai/beta/guides/links): Guide for working with links in the Beta API.
+
+### Beta Changelog
+
+- [Beta Changelog](https://developer.devrev.ai/beta/changelog): Log of updates and changes to the Beta API.

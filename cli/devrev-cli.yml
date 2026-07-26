@@ -1,0 +1,38 @@
+generated: '2026-07-18'
+method: searched
+source: https://github.com/devrev/cli
+name: devrev
+description: >-
+  The DevRev CLI is a Go-based command-line tool for interacting with the DevRev
+  platform and, in particular, for developing, building, and deploying snap-ins
+  (custom apps/automations) and Airdrop recipes.
+repository: https://github.com/devrev/cli
+package:
+  registry: npm
+  name: devrev
+  version: 0.4.15
+  url: https://www.npmjs.com/package/devrev
+install:
+- method: npm
+  command: npm install -g devrev
+auxiliary_clis:
+- name: chef-cli
+  purpose: >-
+    Airdrop/Airsync recipe development, including a local MCP server for
+    testing metadata mappings (see mcp/devrev-mcp.yml).
+  repository: https://github.com/devrev/adaas-chef-cli
+command_groups:
+- name: snap_in_version
+  purpose: Create, upgrade, and manage snap-in versions.
+- name: snap_in
+  purpose: Draft, activate, and manage snap-in installations.
+- name: profile
+  purpose: Manage authentication profiles / org context (PAT-based).
+key_flows:
+- Authenticate the CLI against a DevRev org with a Personal Access Token.
+- Scaffold, build, and deploy a snap-in from a manifest.
+- Iterate on Airdrop metadata mappings locally via chef-cli.
+notes: >-
+  Auth uses the same Personal Access Tokens as the REST API
+  (authentication/devrev-authentication.yml). The binary is also catalogued in
+  packages/devrev-packages.yml.

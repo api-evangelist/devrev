@@ -1,0 +1,56 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.devrev.ai/about/for-developers
+authentication:
+  style: bearer-pat
+  header: Authorization
+  ref: authentication/devrev-authentication.yml
+request_style:
+  protocol: REST over HTTPS
+  base_url: https://api.devrev.ai
+  naming: >-
+    Dotted resource.method endpoints (e.g. works.create, works.get,
+    accounts.list). Most endpoints are available as both GET (query params)
+    and POST (JSON body) variants.
+  media_type: application/json
+pagination:
+  style: cursor
+  request_params:
+    cursor: Opaque cursor pointing to the next page.
+    limit: Page size.
+    mode: Direction/mode of pagination for supported endpoints.
+  response_fields:
+    next_cursor: >-
+      Present when more results exist; absent on the last page.
+  ref: https://developer.devrev.ai/about/pagination
+versioning:
+  scheme: named-channels
+  channels: [public, beta]
+  mechanism: >-
+    Two API versions (stable Public and early-access Beta) are published and
+    selected via the developer-site version switcher / distinct beta paths.
+  ref: https://developer.devrev.ai/about/versioning
+error_envelope:
+  format: json
+  shape: '{ "message": "<human-readable error>" }'
+  detail: >-
+    Errors return a JSON object with a message field and a standard HTTP status
+    code (400/401/403/404/409/429/500/503). Not RFC 9457 problem+json.
+  ref: errors/devrev-error-codes.yml
+rate_limiting:
+  signaled_via: [X-Ratelimit-Limit, X-Ratelimit-Remaining, X-Ratelimit-Reset, Retry-After]
+  status: 429
+  ref: rate-limits/devrev-rate-limits.yml
+idempotency:
+  supported: false
+  note: >-
+    No idempotency-key header or parameter is documented for the DevRev REST API.
+webhooks:
+  supported: true
+  signature_header: X-DevRev-Signature
+  signature_scheme: HMAC-SHA256 over the raw request payload using the endpoint secret
+  ref: asyncapi/devrev-webhooks.yml
+id_redirects:
+  note: >-
+    A 301 Moved Permanently with a Location header is returned when a resource's
+    ID has changed; clients should follow to the updated ID.

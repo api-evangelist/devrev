@@ -1,0 +1,20 @@
+generated: '2026-07-18'
+method: searched
+source: https://developer.devrev.ai/about/versioning
+versioning:
+  scheme: named-channels
+  channels: [public, beta]
+  current: public
+  docs: https://developer.devrev.ai/about/versioning
+  note: >-
+    A stable Public API and an early-access Beta API are maintained in parallel;
+    beta endpoints are surfaced under distinct /beta/ paths.
+status_page: https://status.devrev.ai/
+changelog: https://developer.devrev.ai/changelog
+changelog_artifact: changelog/devrev-changelog.yml
+deprecation:
+  policy_url: null
+  note: >-
+    No formal, dated deprecation/sunset policy (RFC 8594 Sunset/Deprecation
+    headers) was found published; beta is the pre-stable channel. No Deprecation
+    pointer wired.
