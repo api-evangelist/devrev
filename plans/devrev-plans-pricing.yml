@@ -1,0 +1,36 @@
+# Pricing transcribed from the provider's own page — see provenance. Numbers are quoted, not derived.
+generated: '2026-10-07'
+method: searched
+source: https://devrev.ai/pricing
+sources:
+- https://devrev.ai/pricing
+provenance:
+  tool: all/0-working/economics/harvest_pricing.py
+  run: 20261007T104522
+  grounding: every price_text was found verbatim in the fetched page text
+audience: business-product
+pricing_basis: negotiated
+delivery:
+  delivery: managed
+  method: page
+  read: '2026-10-07'
+published: false
+note: No numeric price is published on the pricing page; Three tiers; only non-numeric prices (Free, Contact
+  us). Page describes a consumption-based credit system but states no credit prices.
+plan_count: 3
+plans:
+- name: Mini
+  price_text: Free
+  period: none
+  included_quota: Conversational interface on every surface; accurate search across all your org's data;
+    basic task automation; one-click connectors; Bronze-level support + free training on DevRevU
+- name: Pro
+  price_text: Contact us
+  period: none
+  included_quota: Everything in Mini, plus Connectors Marketplace, conversational analytics (Text2SQL),
+    Agent Studio, Silver-level support, discounted credits via subscription models
+- name: Max
+  price_text: Contact us
+  period: none
+  included_quota: Everything in Mini + Pro, plus embedded Applied AI team, enterprise-grade security incl.
+    SCIM, near real-time AirSync, Gold-level support
