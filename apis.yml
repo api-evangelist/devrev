@@ -99,6 +99,8 @@ apis:
   - type: Webhooks
     url: asyncapi/devrev-webhooks.yml
 common:
+- type: Plans
+  url: plans/devrev-plans-pricing.yml
 - type: DomainSecurity
   url: security/devrev-domain-security.yml
 - type: Website
