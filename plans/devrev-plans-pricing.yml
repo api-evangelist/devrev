@@ -34,3 +34,30 @@ plans:
   period: none
   included_quota: Everything in Mini + Pro, plus embedded Applied AI team, enterprise-grade security incl.
     SCIM, near real-time AirSync, Gold-level support
+x-canonical:
+  generated: '2026-10-08'
+  vocabulary: all/0-working/economics/plans-canonical.yml
+  models: []
+  units: []
+  plans:
+  - name: Mini
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: Pro
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
+  - name: Max
+    access: other
+    model: unstated
+    model_how: derived
+    units: []
+    periods:
+    - none
