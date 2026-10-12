@@ -1,0 +1,16 @@
+generated: '2026-10-12'
+method: none
+source:
+- https://zapier.com/apps/devrev/integrations
+- https://n8n.io/integrations/devrev/
+- https://composio.dev/toolkits/devrev
+- https://monid.ai/tools/devrev
+checked:
+- https://composio.dev/toolkits/devrev
+- https://monid.ai/tools/devrev
+- https://n8n.io/integrations/devrev/
+- https://zapier.com/apps/devrev/integrations
+summary: null
+marketplace_apps: []
+edges: []
+templates: []
