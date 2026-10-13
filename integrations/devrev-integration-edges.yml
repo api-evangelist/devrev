@@ -1,16 +1,32 @@
 generated: '2026-10-12'
-method: none
+method: searched
 source:
 - https://zapier.com/apps/devrev/integrations
 - https://n8n.io/integrations/devrev/
 - https://composio.dev/toolkits/devrev
 - https://monid.ai/tools/devrev
 checked:
+- https://aws.amazon.com/marketplace/
 - https://composio.dev/toolkits/devrev
 - https://monid.ai/tools/devrev
 - https://n8n.io/integrations/devrev/
 - https://zapier.com/apps/devrev/integrations
 summary: null
 marketplace_apps: []
-edges: []
+edges:
+- partner_name: AWS Marketplace
+  partner: amazon-web-services
+  partner_match: aggregator
+  type: marketplace
+  marketplace: aws-marketplace
+  channel: distribution
+  relationship: platform-app
+  direction: provider-built
+  evidence: https://aws.amazon.com/marketplace/seller-profile?id=4ea4fbef-577d-4fd9-b0b8-64899665aae7
+  listing_count: 1
+  apps:
+  - Computer by DevRev
+  seller_name: DevRev
+  detected_by: sweep-cloud-marketplaces.py
+  detected: '2026-10-13'
 templates: []
