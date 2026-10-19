@@ -6,11 +6,18 @@ source:
 - https://composio.dev/toolkits/devrev
 - https://monid.ai/tools/devrev
 checked:
+- https://api.nuget.org/v3
 - https://aws.amazon.com/marketplace/
 - https://composio.dev/toolkits/devrev
+- https://crates.io/api/v1
 - https://github.com/PipedreamHQ/pipedream/tree/94800dd6de6640b942c65ea7ee655f71ac56d438/components/
 - https://monid.ai/tools/devrev
 - https://n8n.io/integrations/devrev/
+- https://proxy.golang.org
+- https://pypi.org/pypi
+- https://registry.npmjs.org
+- https://repo1.maven.org/maven2
+- https://rubygems.org/api/v1
 - https://zapier.com/apps/devrev/integrations
 - slack/integrations/slack-integration-edges.yml
 summary: null
@@ -74,4 +81,79 @@ edges:
   detected: '2026-10-18'
   detected_by: mirror-platform-listings.py
   category: Slack app
+- partner_name: npm registry
+  partner: npm
+  partner_match: register
+  type: register
+  direction: provider-built
+  category: official SDK (JavaScript/TypeScript)
+  evidence: https://www.npmjs.com/package/@devrev/api
+  channel: package-registry
+  relationship: distribution-channel
+  contract_reference:
+    register: npm registry (public registry JSON)
+    spec_file: null
+    language: JavaScript/TypeScript
+    packages:
+    - name: '@devrev/api'
+      version: 0.0.7
+      released: '2026-03-26'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@devrev/api
+      repo_leg: github-org:devrev
+      publisher_leg: email:devrev.ai
+      matched_by: domain
+    - name: '@devrev/git-sdk'
+      version: 1.7.3
+      released: '2026-09-24'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@devrev/git-sdk
+      repo_leg: github-org:devrev
+      publisher_leg: email:devrev.ai
+      matched_by: domain
+    - name: '@devrev/sdk-cordova'
+      version: 2.3.3
+      released: '2026-10-16'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@devrev/sdk-cordova
+      repo_leg: domain:devrev.ai
+      publisher_leg: email:devrev.ai
+      matched_by: domain
+    - name: '@devrev/sdk-react-native'
+      version: 2.3.11
+      released: '2026-10-13'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@devrev/sdk-react-native
+      repo_leg: github-org:devrev
+      publisher_leg: email:devrev.ai
+      matched_by: domain
+    - name: '@devrev/ts-adaas'
+      version: 1.20.3
+      released: '2026-10-01'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@devrev/ts-adaas
+      repo_leg: github-org:devrev
+      publisher_leg: email:devrev.ai
+      matched_by: domain
+    - name: '@devrev/typescript-sdk'
+      version: 1.1.79
+      released: '2026-10-09'
+      released_field: modified
+      lapsed: false
+      page: https://www.npmjs.com/package/@devrev/typescript-sdk
+      repo_leg: github-org:devrev
+      publisher_leg: email:devrev.ai
+      matched_by: domain
+    current: true
+    signal_note: 'an official package on the registry: distribution, not an integration; lapsed = no release in
+      24 months'
+    detected_by: sweep-official-sdks.py
+    detected: '2026-10-18'
+  detected_by: sweep-official-sdks.py
+  first_seen: '2026-10-18'
 templates: []
