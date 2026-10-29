@@ -64,6 +64,122 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Devrev is a company surfaced as a portfolio company of mayfield and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+DevRev is an AI-native platform that unifies customer support, product development, and analytics on a single knowledge graph connecting end users (Rev), builders (Dev), and their work. Its REST API is organized around resource-oriented URLs, accepts and returns JSON, and uses standard HTTP verbs and status codes. Endpoints cover works (issues and tickets), parts (the product hierarchy), accounts, articles and the knowledge base, conversations and timeline entries, tags, schedules, SLAs, surveys, webhooks, and snap-ins (custom automations and apps that extend the platform). Authentication uses Personal Access Tokens (PATs) passed as a Bearer token, and both a stable Public API and an early-access Beta API are published. DevRev also ships first-party SDKs, a Go-based CLI, the embeddable PLuG support widget, and Airdrop (ADaaS) data-sync tooling.
 
-Backed by: mayfield — https://devrev.ai
+**Areas:** Company · Customer Service · Product Development · Issue Tracking · Knowledge Base · CRM · Developer Tools · Artificial Intelligence · Webhook · Automation
+
+## Devrev on APIs.io
+
+Everything profiled for Devrev is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/devrev/](https://apis.io/providers/devrev/)** — or go straight to one of the APIs or properties below.
+
+### APIs (1)
+
+- [DevRev REST API](https://apis.io/apis/devrev/devrev-rest-api/) — The DevRev public REST API for managing works (issues/tickets), parts, accounts, articles, conversations, timeline entries, webhooks, and more.…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (1)
+
+Event-driven and webhook contracts.
+
+- [Devrev Webhooks](https://apis.io/asyncapis/devrev/devrev-webhooks/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [devrev-airsync-mcp](https://apis.io/servers/devrev/devrev-airsync-mcp/)
+
+#### Security (3)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Devrev Authentication](https://apis.io/security/devrev/devrev-authentication/)
+- [Devrev Domain Security](https://apis.io/security/devrev/devrev-domain-security/)
+- [Devrev Trust Center](https://apis.io/security/devrev/devrev-trust-center/)
+
+#### Plans and pricing (1)
+
+Published plans, tiers and prices.
+
+- [Devrev Plans Pricing](https://apis.io/plans/devrev/devrev-plans-pricing/)
+
+#### Rate limits (1)
+
+Published request limits.
+
+- [Devrev Rate Limits](https://apis.io/rate-limits/devrev/devrev-rate-limits/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://devrev.ai)
+- [Documentation](https://developer.devrev.ai/)
+- [Getting started](https://developer.devrev.ai/api-reference/getting-started)
+- [API reference](https://developer.devrev.ai/public/about/for-developers)
+- [Pricing](https://devrev.ai/pricing)
+- [Sign up](https://app.devrev.ai/)
+- [Blog](https://devrev.ai/blog)
+- [Compliance](https://security.devrev.ai/)
+- [Terms of service](https://devrev.ai/legal/terms-of-service)
+- [Privacy policy](https://devrev.ai/legal/privacy-policy)
+- [GitHub](https://github.com/devrev)
+- [Status](https://status.devrev.ai/)
+
+## API Evangelist rating
+
+**Kin Score 50.6** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 71.7 |
+| Contract quality | 39.0 |
+| Contract governance | 18.2 |
+| Operational transparency | 34.2 |
+| Developer ergonomics | 65.5 |
+| Access clarity | 63.2 |
+
+**Agent readiness 28.6** — agent-ready
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | documented (partial credit) |
+| Auth Clarity | bearer (partial credit) |
+| Idempotency | — |
+| Error Semantics | documented (partial credit) |
+| OpenAPI Examples | — |
+| Rate Limit Signal | documented (partial credit) |
+| Event Surface Described | yes |
+| Agent Skills | — |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | — |
+| Protected Resource Metadata | — |
+| Dynamic Client Registration | — |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | na |
+
+**Regulatory alignment 23.6** — Horizontal (data, software, accessibility, platform)
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/devrev/](https://apis.io/providers/devrev/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Devrev: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/devrev/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
